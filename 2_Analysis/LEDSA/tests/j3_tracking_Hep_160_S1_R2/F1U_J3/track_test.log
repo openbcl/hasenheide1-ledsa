@@ -1,0 +1,16 @@
+config.ini loaded
+Start: Analysebild 4 (7K7A7778.CR3, t -104.0 s), Referenzbild der LED-Suche 7K7A7778.CR3 (t -103.99 s)
+Laengsanker: LED-Abstand [22.0, 22.0, 22.0] px, Ende - unterste LED im Referenzbild [5.0, 6.0, 7.0] px
+   0/573 7K7A7778.CR3 (t -104 s): Schritt (+0,+0) px, gesamt (+0.3,-0.2) px, nachgerueckt 438/438
+  50/573 7K7A7828.CR3 (t 88 s): Schritt (+0,+0) px, gesamt (+1.0,+0.4) px, nachgerueckt 438/438
+ 100/573 7K7A7878.CR3 (t 260 s): Schritt (+0,+0) px, gesamt (+1.5,+0.5) px, nachgerueckt 438/438
+ 150/573 7K7A7928.CR3 (t 389 s): Schritt (+0,+0) px, gesamt (+1.6,+0.7) px, nachgerueckt 438/438
+ 200/573 7K7A7978.CR3 (t 572 s): Schritt (+0,+0) px, gesamt (+1.8,+0.6) px, nachgerueckt 438/438
+ 250/573 7K7A8028.CR3 (t 756 s): Schritt (+0,+0) px, gesamt (+2.1,+0.7) px, nachgerueckt 438/438
+ 300/573 7K7A8078.CR3 (t 952 s): Schritt (+0,+0) px, gesamt (+2.1,+0.7) px, nachgerueckt 438/438
+ 350/573 7K7A8128.CR3 (t 1132 s): Schritt (+0,+0) px, gesamt (+2.1,+1.0) px, nachgerueckt 438/438
+ 400/573 7K7A8178.CR3 (t 1320 s): Schritt (+0,+0) px, gesamt (+2.4,+0.7) px, nachgerueckt 438/438
+ 450/573 7K7A8228.CR3 (t 1504 s): Schritt (+0,+0) px, gesamt (+2.3,+1.0) px, nachgerueckt 438/438
+ 500/573 7K7A8278.CR3 (t 1684 s): Schritt (+0,+0) px, gesamt (+2.4,+1.2) px, nachgerueckt 438/438
+ 550/573 7K7A8328.CR3 (t 1880 s): Schritt (+0,+0) px, gesamt (+2.7,+1.2) px, nachgerueckt 438/438
+[ok] analysis/tracked_positions.csv.gz, analysis/tracking_log.csv; uebersprungen 0

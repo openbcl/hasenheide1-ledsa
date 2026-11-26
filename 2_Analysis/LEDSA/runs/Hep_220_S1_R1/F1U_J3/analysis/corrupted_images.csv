@@ -1,0 +1,5 @@
+image_path,analysis_step,error_type,error_message
+<H1_IMAGES_ROOT>\2_juelichMeasurements\2025-12-08\camJ3\7K7A0846.CR3,reading of the image metadata,Exiv2Error,"(<ErrorCode.kerCorruptedMetadata: 60>, 'beschädigte Bild-Metadaten')"
+<H1_IMAGES_ROOT>\2_juelichMeasurements\2025-12-08\camJ3\7K7A1130.CR3,reading of the image metadata,Exiv2Error,"(<ErrorCode.kerInputDataReadFailed: 21>, 'Die Eingabedaten konnten nicht gelesen werden.')"
+<H1_IMAGES_ROOT>\2_juelichMeasurements\2025-12-08\camJ3\7K7A1154.CR3,reading of the image metadata,Exiv2Error,"(<ErrorCode.kerInputDataReadFailed: 21>, 'Die Eingabedaten konnten nicht gelesen werden.')"
+<H1_IMAGES_ROOT>\2_juelichMeasurements\2025-12-08\camJ3\7K7A2359.CR3,reading of the image metadata,Exiv2Error,"(<ErrorCode.kerCorruptedMetadata: 60>, 'beschädigte Bild-Metadaten')"

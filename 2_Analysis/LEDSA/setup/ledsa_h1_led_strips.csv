@@ -1,0 +1,11 @@
+# ledsa_h1_setup.py: LED-Streifen Woche 2 je Raum, Array = Kanal (led_streifen.csv); Juelich z_bottom = z_top - 143/60 m (festgelegt 2026-11-24)
+room,array,led,colour,channel,origin,x_m,y_m,z_bottom_m,z_top_m,z_bottom_paper_m,z_top_paper_m
+F1,0,LED 1,R,0,BCL,4.162,3.464,0.055,2.535,0.0,2.5
+F1,1,LED 1.1,G,1,Jülich,4.126,3.317,0.1517,2.535,0.0,2.5
+F1,2,LED 1.2,B,2,Jülich,4.126,3.291,0.1517,2.535,0.0,2.5
+F2,0,LED 3,R,0,BCL,4.52,7.37,0.055,2.535,0.0,2.5
+F2,1,LED 3.1,G,1,Jülich,4.478,7.232,0.1517,2.535,0.0,2.5
+F2,2,LED 3.2,B,2,Jülich,4.478,7.21,0.1517,2.535,0.0,2.5
+F3,0,LED 5.1,R,0,Jülich,4.472,11.956,0.1517,2.535,0.0,2.5
+F3,1,LED 5.2,G,1,Jülich,4.472,11.928,0.1517,2.535,0.0,2.5
+F3,2,LED 5.3,B,2,Jülich,4.472,11.904,0.1517,2.535,0.0,2.5

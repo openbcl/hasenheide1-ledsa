@@ -1,0 +1,255 @@
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 68 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=1, led_id=9, rel. deviation = 12.66%
+  img_id=1, led_id=14, rel. deviation = 9.75%
+  img_id=1, led_id=23, rel. deviation = 8.79%
+  img_id=1, led_id=52, rel. deviation = 15.68%
+  img_id=1, led_id=114, rel. deviation = 8.21%
+  img_id=1, led_id=144, rel. deviation = 10.10%
+  img_id=2, led_id=18, rel. deviation = 7.91%
+  img_id=2, led_id=30, rel. deviation = 8.59%
+  img_id=2, led_id=38, rel. deviation = 8.38%
+  img_id=2, led_id=42, rel. deviation = 7.64%
+  img_id=2, led_id=49, rel. deviation = 7.80%
+  img_id=2, led_id=51, rel. deviation = 8.87%
+  img_id=2, led_id=52, rel. deviation = 10.95%
+  img_id=2, led_id=73, rel. deviation = 9.47%
+  img_id=2, led_id=141, rel. deviation = 10.47%
+  img_id=3, led_id=16, rel. deviation = 8.57%
+  img_id=3, led_id=67, rel. deviation = 8.53%
+  img_id=3, led_id=122, rel. deviation = 8.38%
+  img_id=4, led_id=0, rel. deviation = 7.64%
+  img_id=4, led_id=1, rel. deviation = 9.92%
+  img_id=4, led_id=132, rel. deviation = 9.70%
+  img_id=4, led_id=138, rel. deviation = 14.00%
+  img_id=5, led_id=2, rel. deviation = 8.10%
+  img_id=5, led_id=3, rel. deviation = 9.35%
+  img_id=5, led_id=17, rel. deviation = 7.68%
+  img_id=5, led_id=19, rel. deviation = 9.61%
+  img_id=5, led_id=27, rel. deviation = 8.88%
+  img_id=5, led_id=40, rel. deviation = 8.34%
+  img_id=5, led_id=115, rel. deviation = 7.85%
+  img_id=5, led_id=122, rel. deviation = 9.82%
+  img_id=6, led_id=10, rel. deviation = 8.45%
+  img_id=6, led_id=19, rel. deviation = 8.94%
+  img_id=6, led_id=37, rel. deviation = 9.91%
+  img_id=6, led_id=57, rel. deviation = 8.51%
+  img_id=6, led_id=69, rel. deviation = 8.22%
+  img_id=6, led_id=87, rel. deviation = 7.70%
+  img_id=6, led_id=132, rel. deviation = 8.84%
+  img_id=7, led_id=20, rel. deviation = 7.51%
+  img_id=7, led_id=21, rel. deviation = 9.53%
+  img_id=7, led_id=22, rel. deviation = 9.25%
+  img_id=7, led_id=46, rel. deviation = 7.57%
+  img_id=7, led_id=47, rel. deviation = 8.52%
+  img_id=7, led_id=59, rel. deviation = 8.62%
+  img_id=8, led_id=0, rel. deviation = 7.55%
+  img_id=8, led_id=10, rel. deviation = 9.06%
+  img_id=8, led_id=16, rel. deviation = 12.50%
+  img_id=8, led_id=38, rel. deviation = 8.61%
+  img_id=8, led_id=70, rel. deviation = 7.52%
+  img_id=8, led_id=78, rel. deviation = 8.16%
+  img_id=8, led_id=89, rel. deviation = 8.13%
+  img_id=8, led_id=138, rel. deviation = 9.06%
+  img_id=9, led_id=44, rel. deviation = 8.10%
+  img_id=9, led_id=47, rel. deviation = 7.71%
+  img_id=9, led_id=49, rel. deviation = 8.68%
+  img_id=9, led_id=56, rel. deviation = 7.62%
+  img_id=9, led_id=121, rel. deviation = 8.27%
+  img_id=9, led_id=122, rel. deviation = 8.58%
+  img_id=9, led_id=144, rel. deviation = 11.08%
+  img_id=10, led_id=0, rel. deviation = 13.13%
+  img_id=10, led_id=4, rel. deviation = 7.79%
+  img_id=10, led_id=20, rel. deviation = 9.69%
+  img_id=10, led_id=40, rel. deviation = 10.46%
+  img_id=10, led_id=50, rel. deviation = 7.77%
+  img_id=10, led_id=79, rel. deviation = 9.08%
+  img_id=10, led_id=122, rel. deviation = 9.46%
+  img_id=10, led_id=123, rel. deviation = 9.25%
+  img_id=10, led_id=135, rel. deviation = 8.01%
+  img_id=10, led_id=146, rel. deviation = 7.97%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 46 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=1, led_id=36, rel. deviation = 9.93%
+  img_id=1, led_id=112, rel. deviation = 8.24%
+  img_id=1, led_id=143, rel. deviation = 9.03%
+  img_id=1, led_id=144, rel. deviation = 10.65%
+  img_id=1, led_id=145, rel. deviation = 10.65%
+  img_id=1, led_id=147, rel. deviation = 9.75%
+  img_id=2, led_id=12, rel. deviation = 8.20%
+  img_id=2, led_id=95, rel. deviation = 9.96%
+  img_id=2, led_id=125, rel. deviation = 8.96%
+  img_id=3, led_id=64, rel. deviation = 8.12%
+  img_id=3, led_id=110, rel. deviation = 8.71%
+  img_id=3, led_id=146, rel. deviation = 8.16%
+  img_id=4, led_id=4, rel. deviation = 7.71%
+  img_id=4, led_id=13, rel. deviation = 10.29%
+  img_id=4, led_id=104, rel. deviation = 7.90%
+  img_id=4, led_id=105, rel. deviation = 7.94%
+  img_id=5, led_id=0, rel. deviation = 7.77%
+  img_id=5, led_id=48, rel. deviation = 8.16%
+  img_id=5, led_id=116, rel. deviation = 7.81%
+  img_id=5, led_id=147, rel. deviation = 7.85%
+  img_id=6, led_id=80, rel. deviation = 7.60%
+  img_id=6, led_id=94, rel. deviation = 7.97%
+  img_id=6, led_id=100, rel. deviation = 7.94%
+  img_id=6, led_id=143, rel. deviation = 10.06%
+  img_id=7, led_id=40, rel. deviation = 8.55%
+  img_id=7, led_id=47, rel. deviation = 8.05%
+  img_id=7, led_id=66, rel. deviation = 8.48%
+  img_id=7, led_id=128, rel. deviation = 9.11%
+  img_id=8, led_id=36, rel. deviation = 8.88%
+  img_id=8, led_id=49, rel. deviation = 8.14%
+  img_id=8, led_id=69, rel. deviation = 8.34%
+  img_id=8, led_id=101, rel. deviation = 7.64%
+  img_id=8, led_id=131, rel. deviation = 8.72%
+  img_id=8, led_id=132, rel. deviation = 8.75%
+  img_id=8, led_id=149, rel. deviation = 7.54%
+  img_id=9, led_id=27, rel. deviation = 11.89%
+  img_id=9, led_id=39, rel. deviation = 8.30%
+  img_id=9, led_id=53, rel. deviation = 8.13%
+  img_id=9, led_id=98, rel. deviation = 10.17%
+  img_id=9, led_id=105, rel. deviation = 9.58%
+  img_id=9, led_id=114, rel. deviation = 9.62%
+  img_id=10, led_id=0, rel. deviation = 9.63%
+  img_id=10, led_id=1, rel. deviation = 8.20%
+  img_id=10, led_id=6, rel. deviation = 7.64%
+  img_id=10, led_id=99, rel. deviation = 7.52%
+  img_id=10, led_id=143, rel. deviation = 9.24%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 19 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=1, led_id=304, rel. deviation = 7.96%
+  img_id=1, led_id=361, rel. deviation = 7.91%
+  img_id=2, led_id=320, rel. deviation = 8.37%
+  img_id=2, led_id=338, rel. deviation = 8.95%
+  img_id=2, led_id=365, rel. deviation = 8.14%
+  img_id=2, led_id=398, rel. deviation = 8.64%
+  img_id=4, led_id=306, rel. deviation = 8.11%
+  img_id=4, led_id=313, rel. deviation = 7.84%
+  img_id=4, led_id=315, rel. deviation = 9.66%
+  img_id=4, led_id=343, rel. deviation = 9.00%
+  img_id=4, led_id=368, rel. deviation = 8.13%
+  img_id=5, led_id=390, rel. deviation = 7.85%
+  img_id=6, led_id=358, rel. deviation = 8.55%
+  img_id=7, led_id=294, rel. deviation = 12.00%
+  img_id=7, led_id=331, rel. deviation = 10.01%
+  img_id=8, led_id=299, rel. deviation = 13.41%
+  img_id=9, led_id=324, rel. deviation = 7.56%
+  img_id=9, led_id=355, rel. deviation = 7.59%
+  img_id=9, led_id=411, rel. deviation = 7.53%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 35 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=1, led_id=294, rel. deviation = 9.67%
+  img_id=1, led_id=295, rel. deviation = 7.51%
+  img_id=1, led_id=366, rel. deviation = 8.33%
+  img_id=1, led_id=375, rel. deviation = 7.60%
+  img_id=1, led_id=389, rel. deviation = 9.13%
+  img_id=1, led_id=436, rel. deviation = 10.11%
+  img_id=2, led_id=333, rel. deviation = 7.77%
+  img_id=2, led_id=336, rel. deviation = 15.18%
+  img_id=2, led_id=378, rel. deviation = 8.67%
+  img_id=2, led_id=397, rel. deviation = 8.41%
+  img_id=2, led_id=412, rel. deviation = 8.15%
+  img_id=3, led_id=330, rel. deviation = 8.95%
+  img_id=3, led_id=336, rel. deviation = 11.99%
+  img_id=4, led_id=295, rel. deviation = 7.61%
+  img_id=4, led_id=297, rel. deviation = 7.54%
+  img_id=4, led_id=304, rel. deviation = 9.68%
+  img_id=4, led_id=308, rel. deviation = 8.20%
+  img_id=4, led_id=317, rel. deviation = 12.01%
+  img_id=4, led_id=373, rel. deviation = 8.83%
+  img_id=5, led_id=346, rel. deviation = 7.69%
+  img_id=5, led_id=405, rel. deviation = 8.83%
+  img_id=6, led_id=332, rel. deviation = 7.56%
+  img_id=6, led_id=342, rel. deviation = 10.67%
+  img_id=6, led_id=380, rel. deviation = 8.43%
+  img_id=7, led_id=334, rel. deviation = 7.53%
+  img_id=7, led_id=352, rel. deviation = 7.95%
+  img_id=7, led_id=419, rel. deviation = 8.47%
+  img_id=8, led_id=378, rel. deviation = 8.00%
+  img_id=8, led_id=395, rel. deviation = 8.24%
+  img_id=8, led_id=427, rel. deviation = 9.65%
+  img_id=9, led_id=306, rel. deviation = 8.57%
+  img_id=9, led_id=324, rel. deviation = 8.32%
+  img_id=10, led_id=300, rel. deviation = 7.88%
+  img_id=10, led_id=358, rel. deviation = 7.68%
+  img_id=10, led_id=421, rel. deviation = 8.99%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+ledsa runs with the following arguments:
+Namespace(step_1=False, step_2=False, step_3=False, step_3_fast=False, config=None, restart=False, red=False, green=False, blue=False, rgb=False, coordinates=False, analysis=False, config_analysis=None, cc=False, cc_channels=[0, 1, 2], config_stacked=None, n_simulations=2, analysis_stacked=True, demo=False, setup=None, run=False, n_cores=None, acceptance_test=False, acceptance_test_debug=False)
+config_stacked.ini loaded.
+Stacked analysis: 3 LED array(s) x 3 channel(s) x 1 quantity(s), solver='linear'
+
+-- quantity=sum_col_val  array=0  channel=0 --
+StackedExtinctionCoefficients | led_array_id=0 | channel=0 | solver=linear | ref_prop=sum_col_val | simulations=[sim0(arr0), sim1(arr0)] | n_leds=300 | n_layers=25
+
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+  [array 0] 320 time-aligned images from 2 simulations.
+  Time-alignment report: time_alignment_led_array_0.txt
+Saved: analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_0_sum_col_val_led_array_0.csv
+
+-- quantity=sum_col_val  array=0  channel=1 --
+StackedExtinctionCoefficients | led_array_id=0 | channel=1 | solver=linear | ref_prop=sum_col_val | simulations=[sim0(arr0), sim1(arr0)] | n_leds=300 | n_layers=25
+
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+  [array 0] 320 time-aligned images from 2 simulations.
+Saved: analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_1_sum_col_val_led_array_0.csv
+
+-- quantity=sum_col_val  array=0  channel=2 --
+StackedExtinctionCoefficients | led_array_id=0 | channel=2 | solver=linear | ref_prop=sum_col_val | simulations=[sim0(arr0), sim1(arr0)] | n_leds=300 | n_layers=25
+
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+  [array 0] 320 time-aligned images from 2 simulations.
+Saved: analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_2_sum_col_val_led_array_0.csv
+
+-- quantity=sum_col_val  array=1  channel=0 --
+StackedExtinctionCoefficients | led_array_id=1 | channel=0 | solver=linear | ref_prop=sum_col_val | simulations=[sim0(arr1), sim1(arr1)] | n_leds=288 | n_layers=25
+
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+  [array 1] 320 time-aligned images from 2 simulations.
+  Time-alignment report: time_alignment_led_array_1.txt
+Saved: analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_0_sum_col_val_led_array_1.csv
+
+-- quantity=sum_col_val  array=1  channel=1 --
+StackedExtinctionCoefficients | led_array_id=1 | channel=1 | solver=linear | ref_prop=sum_col_val | simulations=[sim0(arr1), sim1(arr1)] | n_leds=288 | n_layers=25
+
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+  [array 1] 320 time-aligned images from 2 simulations.
+Saved: analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_1_sum_col_val_led_array_1.csv
+
+-- quantity=sum_col_val  array=1  channel=2 --
+StackedExtinctionCoefficients | led_array_id=1 | channel=2 | solver=linear | ref_prop=sum_col_val | simulations=[sim0(arr1), sim1(arr1)] | n_leds=288 | n_layers=25
+
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+  [array 1] 320 time-aligned images from 2 simulations.
+Saved: analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_2_sum_col_val_led_array_1.csv
+
+-- quantity=sum_col_val  array=2  channel=0 --
+StackedExtinctionCoefficients | led_array_id=2 | channel=0 | solver=linear | ref_prop=sum_col_val | simulations=[sim0(arr2), sim1(arr2)] | n_leds=288 | n_layers=25
+
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+  [array 2] 320 time-aligned images from 2 simulations.
+  Time-alignment report: time_alignment_led_array_2.txt
+Saved: analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_0_sum_col_val_led_array_2.csv
+
+-- quantity=sum_col_val  array=2  channel=1 --
+StackedExtinctionCoefficients | led_array_id=2 | channel=1 | solver=linear | ref_prop=sum_col_val | simulations=[sim0(arr2), sim1(arr2)] | n_leds=288 | n_layers=25
+
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+  [array 2] 320 time-aligned images from 2 simulations.
+Saved: analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_1_sum_col_val_led_array_2.csv
+
+-- quantity=sum_col_val  array=2  channel=2 --
+StackedExtinctionCoefficients | led_array_id=2 | channel=2 | solver=linear | ref_prop=sum_col_val | simulations=[sim0(arr2), sim1(arr2)] | n_leds=288 | n_layers=25
+
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+Images with indices [ 1  2  3  4  5  6  7  8  9 10] were used for calculating reference intensities.
+  [array 2] 320 time-aligned images from 2 simulations.
+Saved: analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_2_sum_col_val_led_array_2.csv

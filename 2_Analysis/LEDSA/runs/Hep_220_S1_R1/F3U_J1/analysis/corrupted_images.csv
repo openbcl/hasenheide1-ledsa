@@ -1,0 +1,4 @@
+image_path,analysis_step,error_type,error_message
+<H1_IMAGES_ROOT>\2_juelichMeasurements\2025-12-08\camJ1\IMG_2243.CR2,reading of the image metadata,Exiv2Error,"(<ErrorCode.kerInputDataReadFailed: 21>, 'Die Eingabedaten konnten nicht gelesen werden.')"
+<H1_IMAGES_ROOT>\2_juelichMeasurements\2025-12-08\camJ1\IMG_1906.CR2,extraction of the LED intensities,LibRawIOError,b'Input/output error'
+<H1_IMAGES_ROOT>\2_juelichMeasurements\2025-12-08\camJ1\IMG_3276.CR2,extraction of the LED intensities,LibRawIOError,b'Input/output error'

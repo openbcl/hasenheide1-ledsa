@@ -1,0 +1,417 @@
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 159 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=22, led_id=13, rel. deviation = 7.66%
+  img_id=22, led_id=14, rel. deviation = 9.65%
+  img_id=22, led_id=18, rel. deviation = 9.31%
+  img_id=22, led_id=20, rel. deviation = 8.64%
+  img_id=22, led_id=25, rel. deviation = 10.33%
+  img_id=22, led_id=32, rel. deviation = 7.98%
+  img_id=22, led_id=38, rel. deviation = 7.91%
+  img_id=22, led_id=44, rel. deviation = 12.80%
+  img_id=22, led_id=53, rel. deviation = 9.20%
+  img_id=22, led_id=56, rel. deviation = 8.78%
+  img_id=22, led_id=67, rel. deviation = 9.44%
+  img_id=22, led_id=68, rel. deviation = 8.09%
+  img_id=22, led_id=76, rel. deviation = 9.39%
+  img_id=22, led_id=92, rel. deviation = 8.37%
+  img_id=22, led_id=97, rel. deviation = 8.81%
+  img_id=22, led_id=109, rel. deviation = 7.68%
+  img_id=22, led_id=110, rel. deviation = 8.51%
+  img_id=22, led_id=120, rel. deviation = 8.57%
+  img_id=22, led_id=137, rel. deviation = 10.22%
+  img_id=22, led_id=138, rel. deviation = 8.76%
+  img_id=22, led_id=141, rel. deviation = 12.43%
+  img_id=22, led_id=148, rel. deviation = 13.09%
+  img_id=23, led_id=3, rel. deviation = 13.23%
+  img_id=23, led_id=8, rel. deviation = 12.91%
+  img_id=23, led_id=12, rel. deviation = 9.33%
+  img_id=23, led_id=17, rel. deviation = 8.69%
+  img_id=23, led_id=21, rel. deviation = 11.55%
+  img_id=23, led_id=24, rel. deviation = 9.00%
+  img_id=23, led_id=25, rel. deviation = 12.51%
+  img_id=23, led_id=28, rel. deviation = 11.02%
+  img_id=23, led_id=34, rel. deviation = 10.82%
+  img_id=23, led_id=47, rel. deviation = 8.35%
+  img_id=23, led_id=49, rel. deviation = 7.54%
+  img_id=23, led_id=61, rel. deviation = 7.54%
+  img_id=23, led_id=65, rel. deviation = 7.98%
+  img_id=23, led_id=78, rel. deviation = 8.13%
+  img_id=23, led_id=84, rel. deviation = 10.25%
+  img_id=23, led_id=87, rel. deviation = 8.29%
+  img_id=23, led_id=92, rel. deviation = 9.74%
+  img_id=23, led_id=102, rel. deviation = 8.78%
+  img_id=23, led_id=105, rel. deviation = 10.00%
+  img_id=23, led_id=110, rel. deviation = 8.74%
+  img_id=23, led_id=119, rel. deviation = 12.51%
+  img_id=23, led_id=130, rel. deviation = 11.57%
+  img_id=23, led_id=133, rel. deviation = 10.56%
+  img_id=24, led_id=3, rel. deviation = 9.96%
+  img_id=24, led_id=17, rel. deviation = 7.52%
+  img_id=24, led_id=18, rel. deviation = 8.82%
+  img_id=24, led_id=55, rel. deviation = 9.54%
+  img_id=24, led_id=83, rel. deviation = 9.61%
+  img_id=24, led_id=99, rel. deviation = 10.82%
+  img_id=24, led_id=122, rel. deviation = 8.09%
+  img_id=24, led_id=146, rel. deviation = 12.13%
+  img_id=25, led_id=12, rel. deviation = 7.51%
+  img_id=25, led_id=24, rel. deviation = 8.27%
+  img_id=25, led_id=27, rel. deviation = 9.23%
+  img_id=25, led_id=60, rel. deviation = 12.63%
+  img_id=25, led_id=72, rel. deviation = 8.10%
+  img_id=25, led_id=79, rel. deviation = 7.91%
+  img_id=25, led_id=86, rel. deviation = 8.96%
+  img_id=25, led_id=91, rel. deviation = 10.29%
+  img_id=25, led_id=93, rel. deviation = 11.74%
+  img_id=25, led_id=97, rel. deviation = 9.02%
+  img_id=25, led_id=103, rel. deviation = 10.17%
+  img_id=25, led_id=124, rel. deviation = 7.83%
+  img_id=25, led_id=137, rel. deviation = 12.16%
+  img_id=25, led_id=143, rel. deviation = 7.69%
+  img_id=26, led_id=7, rel. deviation = 10.56%
+  img_id=26, led_id=13, rel. deviation = 7.53%
+  img_id=26, led_id=15, rel. deviation = 7.74%
+  img_id=26, led_id=64, rel. deviation = 11.94%
+  img_id=26, led_id=84, rel. deviation = 11.17%
+  img_id=26, led_id=102, rel. deviation = 12.17%
+  img_id=26, led_id=104, rel. deviation = 8.78%
+  img_id=26, led_id=107, rel. deviation = 7.64%
+  img_id=26, led_id=111, rel. deviation = 9.18%
+  img_id=26, led_id=119, rel. deviation = 13.43%
+  img_id=26, led_id=138, rel. deviation = 9.88%
+  img_id=27, led_id=4, rel. deviation = 9.81%
+  img_id=27, led_id=10, rel. deviation = 14.49%
+  img_id=27, led_id=36, rel. deviation = 8.07%
+  img_id=27, led_id=37, rel. deviation = 8.83%
+  img_id=27, led_id=44, rel. deviation = 8.52%
+  img_id=27, led_id=54, rel. deviation = 8.31%
+  img_id=27, led_id=101, rel. deviation = 9.22%
+  img_id=27, led_id=102, rel. deviation = 8.17%
+  img_id=27, led_id=107, rel. deviation = 7.94%
+  img_id=27, led_id=121, rel. deviation = 9.11%
+  img_id=27, led_id=146, rel. deviation = 9.37%
+  img_id=27, led_id=147, rel. deviation = 8.14%
+  img_id=28, led_id=3, rel. deviation = 8.96%
+  img_id=28, led_id=5, rel. deviation = 7.81%
+  img_id=28, led_id=12, rel. deviation = 8.94%
+  img_id=28, led_id=14, rel. deviation = 7.66%
+  img_id=28, led_id=23, rel. deviation = 8.04%
+  img_id=28, led_id=43, rel. deviation = 10.88%
+  img_id=28, led_id=48, rel. deviation = 7.73%
+  img_id=28, led_id=84, rel. deviation = 9.75%
+  img_id=28, led_id=94, rel. deviation = 8.04%
+  img_id=28, led_id=96, rel. deviation = 8.72%
+  img_id=28, led_id=100, rel. deviation = 7.79%
+  img_id=28, led_id=102, rel. deviation = 12.93%
+  img_id=28, led_id=108, rel. deviation = 8.24%
+  img_id=28, led_id=111, rel. deviation = 7.71%
+  img_id=28, led_id=119, rel. deviation = 9.14%
+  img_id=28, led_id=123, rel. deviation = 11.47%
+  img_id=28, led_id=126, rel. deviation = 9.96%
+  img_id=28, led_id=132, rel. deviation = 13.82%
+  img_id=28, led_id=137, rel. deviation = 10.89%
+  img_id=29, led_id=15, rel. deviation = 7.59%
+  img_id=29, led_id=22, rel. deviation = 10.74%
+  img_id=29, led_id=28, rel. deviation = 8.69%
+  img_id=29, led_id=53, rel. deviation = 11.05%
+  img_id=29, led_id=57, rel. deviation = 7.77%
+  img_id=29, led_id=59, rel. deviation = 9.87%
+  img_id=29, led_id=63, rel. deviation = 9.12%
+  img_id=29, led_id=71, rel. deviation = 8.41%
+  img_id=29, led_id=72, rel. deviation = 7.55%
+  img_id=29, led_id=76, rel. deviation = 8.48%
+  img_id=29, led_id=120, rel. deviation = 7.87%
+  img_id=29, led_id=121, rel. deviation = 7.60%
+  img_id=29, led_id=140, rel. deviation = 12.90%
+  img_id=29, led_id=149, rel. deviation = 9.14%
+  img_id=30, led_id=1, rel. deviation = 10.64%
+  img_id=30, led_id=18, rel. deviation = 7.83%
+  img_id=30, led_id=24, rel. deviation = 7.67%
+  img_id=30, led_id=25, rel. deviation = 9.18%
+  img_id=30, led_id=47, rel. deviation = 7.91%
+  img_id=30, led_id=51, rel. deviation = 7.77%
+  img_id=30, led_id=55, rel. deviation = 12.43%
+  img_id=30, led_id=58, rel. deviation = 8.07%
+  img_id=30, led_id=59, rel. deviation = 7.74%
+  img_id=30, led_id=66, rel. deviation = 8.79%
+  img_id=30, led_id=68, rel. deviation = 8.51%
+  img_id=30, led_id=89, rel. deviation = 10.09%
+  img_id=30, led_id=110, rel. deviation = 9.22%
+  img_id=30, led_id=121, rel. deviation = 12.45%
+  img_id=30, led_id=125, rel. deviation = 9.44%
+  img_id=30, led_id=133, rel. deviation = 10.98%
+  img_id=30, led_id=137, rel. deviation = 8.96%
+  img_id=30, led_id=146, rel. deviation = 8.39%
+  img_id=31, led_id=4, rel. deviation = 7.99%
+  img_id=31, led_id=8, rel. deviation = 7.95%
+  img_id=31, led_id=22, rel. deviation = 7.89%
+  img_id=31, led_id=26, rel. deviation = 8.51%
+  img_id=31, led_id=35, rel. deviation = 10.01%
+  img_id=31, led_id=49, rel. deviation = 8.52%
+  img_id=31, led_id=69, rel. deviation = 8.25%
+  img_id=31, led_id=76, rel. deviation = 8.57%
+  img_id=31, led_id=78, rel. deviation = 9.26%
+  img_id=31, led_id=102, rel. deviation = 8.74%
+  img_id=31, led_id=112, rel. deviation = 7.96%
+  img_id=31, led_id=113, rel. deviation = 7.92%
+  img_id=31, led_id=114, rel. deviation = 8.73%
+  img_id=31, led_id=116, rel. deviation = 11.63%
+  img_id=31, led_id=118, rel. deviation = 9.68%
+  img_id=31, led_id=119, rel. deviation = 12.32%
+  img_id=31, led_id=142, rel. deviation = 9.72%
+  img_id=31, led_id=147, rel. deviation = 11.17%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 19 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=22, led_id=297, rel. deviation = 8.64%
+  img_id=23, led_id=433, rel. deviation = 8.20%
+  img_id=24, led_id=312, rel. deviation = 9.68%
+  img_id=24, led_id=351, rel. deviation = 8.12%
+  img_id=25, led_id=333, rel. deviation = 8.44%
+  img_id=25, led_id=429, rel. deviation = 10.46%
+  img_id=25, led_id=433, rel. deviation = 8.63%
+  img_id=26, led_id=294, rel. deviation = 8.47%
+  img_id=26, led_id=402, rel. deviation = 7.61%
+  img_id=26, led_id=424, rel. deviation = 8.80%
+  img_id=26, led_id=431, rel. deviation = 9.76%
+  img_id=27, led_id=317, rel. deviation = 7.72%
+  img_id=27, led_id=393, rel. deviation = 7.63%
+  img_id=27, led_id=397, rel. deviation = 8.88%
+  img_id=28, led_id=404, rel. deviation = 7.51%
+  img_id=29, led_id=351, rel. deviation = 8.01%
+  img_id=29, led_id=396, rel. deviation = 7.61%
+  img_id=30, led_id=326, rel. deviation = 8.03%
+  img_id=30, led_id=400, rel. deviation = 7.91%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 104 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=22, led_id=14, rel. deviation = 8.53%
+  img_id=22, led_id=18, rel. deviation = 8.00%
+  img_id=22, led_id=20, rel. deviation = 7.56%
+  img_id=22, led_id=25, rel. deviation = 9.71%
+  img_id=22, led_id=44, rel. deviation = 11.15%
+  img_id=22, led_id=53, rel. deviation = 8.14%
+  img_id=22, led_id=56, rel. deviation = 7.81%
+  img_id=22, led_id=67, rel. deviation = 8.09%
+  img_id=22, led_id=76, rel. deviation = 8.43%
+  img_id=22, led_id=92, rel. deviation = 7.52%
+  img_id=22, led_id=97, rel. deviation = 7.97%
+  img_id=22, led_id=137, rel. deviation = 9.11%
+  img_id=22, led_id=138, rel. deviation = 7.77%
+  img_id=22, led_id=141, rel. deviation = 11.33%
+  img_id=22, led_id=148, rel. deviation = 10.62%
+  img_id=23, led_id=3, rel. deviation = 12.12%
+  img_id=23, led_id=8, rel. deviation = 11.42%
+  img_id=23, led_id=12, rel. deviation = 9.00%
+  img_id=23, led_id=17, rel. deviation = 7.93%
+  img_id=23, led_id=21, rel. deviation = 10.70%
+  img_id=23, led_id=24, rel. deviation = 7.53%
+  img_id=23, led_id=25, rel. deviation = 10.65%
+  img_id=23, led_id=28, rel. deviation = 11.02%
+  img_id=23, led_id=34, rel. deviation = 8.78%
+  img_id=23, led_id=65, rel. deviation = 7.55%
+  img_id=23, led_id=84, rel. deviation = 9.78%
+  img_id=23, led_id=87, rel. deviation = 7.60%
+  img_id=23, led_id=92, rel. deviation = 8.92%
+  img_id=23, led_id=102, rel. deviation = 8.09%
+  img_id=23, led_id=105, rel. deviation = 8.52%
+  img_id=23, led_id=110, rel. deviation = 7.67%
+  img_id=23, led_id=119, rel. deviation = 10.84%
+  img_id=23, led_id=130, rel. deviation = 9.53%
+  img_id=23, led_id=133, rel. deviation = 8.71%
+  img_id=24, led_id=3, rel. deviation = 9.00%
+  img_id=24, led_id=18, rel. deviation = 9.02%
+  img_id=24, led_id=55, rel. deviation = 8.86%
+  img_id=24, led_id=83, rel. deviation = 8.92%
+  img_id=24, led_id=99, rel. deviation = 8.97%
+  img_id=24, led_id=146, rel. deviation = 10.92%
+  img_id=25, led_id=27, rel. deviation = 8.21%
+  img_id=25, led_id=60, rel. deviation = 11.51%
+  img_id=25, led_id=86, rel. deviation = 8.16%
+  img_id=25, led_id=91, rel. deviation = 8.66%
+  img_id=25, led_id=93, rel. deviation = 11.05%
+  img_id=25, led_id=103, rel. deviation = 8.64%
+  img_id=25, led_id=137, rel. deviation = 9.96%
+  img_id=25, led_id=143, rel. deviation = 7.78%
+  img_id=26, led_id=7, rel. deviation = 9.73%
+  img_id=26, led_id=64, rel. deviation = 10.48%
+  img_id=26, led_id=84, rel. deviation = 10.43%
+  img_id=26, led_id=102, rel. deviation = 11.15%
+  img_id=26, led_id=104, rel. deviation = 8.20%
+  img_id=26, led_id=111, rel. deviation = 8.70%
+  img_id=26, led_id=119, rel. deviation = 11.76%
+  img_id=26, led_id=138, rel. deviation = 8.60%
+  img_id=27, led_id=4, rel. deviation = 9.43%
+  img_id=27, led_id=10, rel. deviation = 13.22%
+  img_id=27, led_id=44, rel. deviation = 7.83%
+  img_id=27, led_id=54, rel. deviation = 7.99%
+  img_id=27, led_id=101, rel. deviation = 9.54%
+  img_id=27, led_id=121, rel. deviation = 7.87%
+  img_id=27, led_id=146, rel. deviation = 8.14%
+  img_id=28, led_id=3, rel. deviation = 8.39%
+  img_id=28, led_id=12, rel. deviation = 8.88%
+  img_id=28, led_id=43, rel. deviation = 10.38%
+  img_id=28, led_id=84, rel. deviation = 7.93%
+  img_id=28, led_id=96, rel. deviation = 7.94%
+  img_id=28, led_id=102, rel. deviation = 11.24%
+  img_id=28, led_id=119, rel. deviation = 8.32%
+  img_id=28, led_id=123, rel. deviation = 10.42%
+  img_id=28, led_id=126, rel. deviation = 7.97%
+  img_id=28, led_id=132, rel. deviation = 11.59%
+  img_id=28, led_id=137, rel. deviation = 9.45%
+  img_id=29, led_id=22, rel. deviation = 9.00%
+  img_id=29, led_id=53, rel. deviation = 10.75%
+  img_id=29, led_id=59, rel. deviation = 9.73%
+  img_id=29, led_id=63, rel. deviation = 8.95%
+  img_id=29, led_id=71, rel. deviation = 7.70%
+  img_id=29, led_id=76, rel. deviation = 7.60%
+  img_id=29, led_id=140, rel. deviation = 11.04%
+  img_id=30, led_id=1, rel. deviation = 9.35%
+  img_id=30, led_id=18, rel. deviation = 7.93%
+  img_id=30, led_id=25, rel. deviation = 8.77%
+  img_id=30, led_id=55, rel. deviation = 11.35%
+  img_id=30, led_id=66, rel. deviation = 8.68%
+  img_id=30, led_id=89, rel. deviation = 9.78%
+  img_id=30, led_id=121, rel. deviation = 10.26%
+  img_id=30, led_id=125, rel. deviation = 9.07%
+  img_id=30, led_id=133, rel. deviation = 10.60%
+  img_id=30, led_id=146, rel. deviation = 8.05%
+  img_id=31, led_id=4, rel. deviation = 7.92%
+  img_id=31, led_id=8, rel. deviation = 7.53%
+  img_id=31, led_id=26, rel. deviation = 8.55%
+  img_id=31, led_id=35, rel. deviation = 8.55%
+  img_id=31, led_id=49, rel. deviation = 7.56%
+  img_id=31, led_id=76, rel. deviation = 7.74%
+  img_id=31, led_id=78, rel. deviation = 8.34%
+  img_id=31, led_id=102, rel. deviation = 7.75%
+  img_id=31, led_id=116, rel. deviation = 9.73%
+  img_id=31, led_id=118, rel. deviation = 8.11%
+  img_id=31, led_id=119, rel. deviation = 10.55%
+  img_id=31, led_id=142, rel. deviation = 8.41%
+  img_id=31, led_id=147, rel. deviation = 9.20%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 15 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=22, led_id=297, rel. deviation = 8.31%
+  img_id=23, led_id=433, rel. deviation = 7.79%
+  img_id=24, led_id=312, rel. deviation = 9.29%
+  img_id=24, led_id=351, rel. deviation = 7.93%
+  img_id=25, led_id=333, rel. deviation = 8.11%
+  img_id=25, led_id=429, rel. deviation = 10.52%
+  img_id=25, led_id=433, rel. deviation = 8.94%
+  img_id=26, led_id=294, rel. deviation = 7.80%
+  img_id=26, led_id=424, rel. deviation = 8.68%
+  img_id=26, led_id=431, rel. deviation = 9.63%
+  img_id=27, led_id=317, rel. deviation = 7.56%
+  img_id=27, led_id=397, rel. deviation = 7.89%
+  img_id=29, led_id=351, rel. deviation = 7.94%
+  img_id=30, led_id=294, rel. deviation = 7.61%
+  img_id=30, led_id=326, rel. deviation = 7.71%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+ledsa runs with the following arguments:
+Namespace(step_1=False, step_2=False, step_3=False, step_3_fast=False, config=None, restart=False, red=False, green=False, blue=False, rgb=False, coordinates=False, analysis=True, config_analysis=None, cc=False, cc_channels=[0, 1, 2], config_stacked=None, n_simulations=2, analysis_stacked=False, demo=False, setup=None, run=False, n_cores=None, acceptance_test=False, acceptance_test_debug=False)
+config.ini loaded
+config_analysis.ini loaded!
+Using linear solver for extinction coefficient calculation.
+Note: weighting_preference and weighting_curvature parameters are ignored when using the linear solver.
+Quantities to analyse: farbg_sum_col_val sum_col_val
+
+-- quantity=farbg_sum_col_val  array=0  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+.\analysis\channel0\all_parameters.h5 is older than the files it is built from and is rebuilt.
+config.ini loaded
+Loading fit parameters...
+333 of 333 loaded.
+.\analysis\channel0\all_parameters.h5 of an earlier run is replaced.
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_0_farbg_sum_col_val_led_array_0.csv created!
+
+-- quantity=farbg_sum_col_val  array=0  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+.\analysis\channel1\all_parameters.h5 is older than the files it is built from and is rebuilt.
+config.ini loaded
+Loading fit parameters...
+333 of 333 loaded.
+.\analysis\channel1\all_parameters.h5 of an earlier run is replaced.
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_1_farbg_sum_col_val_led_array_0.csv created!
+
+-- quantity=farbg_sum_col_val  array=0  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+.\analysis\channel2\all_parameters.h5 is older than the files it is built from and is rebuilt.
+config.ini loaded
+Loading fit parameters...
+333 of 333 loaded.
+.\analysis\channel2\all_parameters.h5 of an earlier run is replaced.
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_2_farbg_sum_col_val_led_array_0.csv created!
+
+-- quantity=farbg_sum_col_val  array=1  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_0_farbg_sum_col_val_led_array_1.csv created!
+
+-- quantity=farbg_sum_col_val  array=1  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_1_farbg_sum_col_val_led_array_1.csv created!
+
+-- quantity=farbg_sum_col_val  array=1  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_2_farbg_sum_col_val_led_array_1.csv created!
+
+-- quantity=farbg_sum_col_val  array=2  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_0_farbg_sum_col_val_led_array_2.csv created!
+
+-- quantity=farbg_sum_col_val  array=2  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_1_farbg_sum_col_val_led_array_2.csv created!
+
+-- quantity=farbg_sum_col_val  array=2  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_2_farbg_sum_col_val_led_array_2.csv created!
+
+-- quantity=sum_col_val  array=0  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_0_sum_col_val_led_array_0.csv created!
+
+-- quantity=sum_col_val  array=0  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_1_sum_col_val_led_array_0.csv created!
+
+-- quantity=sum_col_val  array=0  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_2_sum_col_val_led_array_0.csv created!
+
+-- quantity=sum_col_val  array=1  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_0_sum_col_val_led_array_1.csv created!
+
+-- quantity=sum_col_val  array=1  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_1_sum_col_val_led_array_1.csv created!
+
+-- quantity=sum_col_val  array=1  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_2_sum_col_val_led_array_1.csv created!
+
+-- quantity=sum_col_val  array=2  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_0_sum_col_val_led_array_2.csv created!
+
+-- quantity=sum_col_val  array=2  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_1_sum_col_val_led_array_2.csv created!
+
+-- quantity=sum_col_val  array=2  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [22 23 24 25 26 27 28 29 30 31] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_2_sum_col_val_led_array_2.csv created!

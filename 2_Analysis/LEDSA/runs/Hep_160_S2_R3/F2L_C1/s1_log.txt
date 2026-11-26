@@ -1,0 +1,11 @@
+ledsa runs with the following arguments:
+Namespace(step_1=True, step_2=False, step_3=False, step_3_fast=False, config=None, restart=False, red=False, green=False, blue=False, rgb=False, coordinates=False, analysis=False, config_analysis=None, cc=False, cc_channels=[0, 1, 2], config_stacked=None, n_simulations=2, analysis_stacked=False, demo=False, setup=None, run=False, n_cores=None, acceptance_test=False, acceptance_test_debug=False)
+config.ini loaded
+Directory plots created 
+Directory analysis created 
+analysis\channel0
+Threshold pixel value: 220.0477752685547
+Searching LEDs
+......................................................................................................................................................................................................................................................................................................................................................................................................................................................
+
+Found 438 LEDS

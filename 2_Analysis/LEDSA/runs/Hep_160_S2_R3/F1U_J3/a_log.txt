@@ -1,0 +1,112 @@
+ledsa runs with the following arguments:
+Namespace(step_1=False, step_2=False, step_3=False, step_3_fast=False, config=None, restart=False, red=False, green=False, blue=False, rgb=False, coordinates=False, analysis=True, config_analysis=None, cc=False, cc_channels=[0, 1, 2], config_stacked=None, n_simulations=2, analysis_stacked=False, demo=False, setup=None, run=False, n_cores=None, acceptance_test=False, acceptance_test_debug=False)
+config.ini loaded
+config_analysis.ini loaded!
+Using linear solver for extinction coefficient calculation.
+Note: weighting_preference and weighting_curvature parameters are ignored when using the linear solver.
+Quantities to analyse: farbg_sum_col_val sum_col_val
+
+-- quantity=farbg_sum_col_val  array=0  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+.\analysis\channel0\all_parameters.h5 is older than the files it is built from and is rebuilt.
+config.ini loaded
+Loading fit parameters...
+420 of 420 loaded.
+.\analysis\channel0\all_parameters.h5 of an earlier run is replaced.
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_0_farbg_sum_col_val_led_array_0.csv created!
+
+-- quantity=farbg_sum_col_val  array=0  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+.\analysis\channel1\all_parameters.h5 is older than the files it is built from and is rebuilt.
+config.ini loaded
+Loading fit parameters...
+420 of 420 loaded.
+.\analysis\channel1\all_parameters.h5 of an earlier run is replaced.
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_1_farbg_sum_col_val_led_array_0.csv created!
+
+-- quantity=farbg_sum_col_val  array=0  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+.\analysis\channel2\all_parameters.h5 is older than the files it is built from and is rebuilt.
+config.ini loaded
+Loading fit parameters...
+420 of 420 loaded.
+.\analysis\channel2\all_parameters.h5 of an earlier run is replaced.
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_2_farbg_sum_col_val_led_array_0.csv created!
+
+-- quantity=farbg_sum_col_val  array=1  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_0_farbg_sum_col_val_led_array_1.csv created!
+
+-- quantity=farbg_sum_col_val  array=1  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_1_farbg_sum_col_val_led_array_1.csv created!
+
+-- quantity=farbg_sum_col_val  array=1  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_2_farbg_sum_col_val_led_array_1.csv created!
+
+-- quantity=farbg_sum_col_val  array=2  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_0_farbg_sum_col_val_led_array_2.csv created!
+
+-- quantity=farbg_sum_col_val  array=2  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_1_farbg_sum_col_val_led_array_2.csv created!
+
+-- quantity=farbg_sum_col_val  array=2  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_2_farbg_sum_col_val_led_array_2.csv created!
+
+-- quantity=sum_col_val  array=0  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_0_sum_col_val_led_array_0.csv created!
+
+-- quantity=sum_col_val  array=0  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_1_sum_col_val_led_array_0.csv created!
+
+-- quantity=sum_col_val  array=0  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_2_sum_col_val_led_array_0.csv created!
+
+-- quantity=sum_col_val  array=1  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_0_sum_col_val_led_array_1.csv created!
+
+-- quantity=sum_col_val  array=1  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_1_sum_col_val_led_array_1.csv created!
+
+-- quantity=sum_col_val  array=1  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_2_sum_col_val_led_array_1.csv created!
+
+-- quantity=sum_col_val  array=2  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_0_sum_col_val_led_array_2.csv created!
+
+-- quantity=sum_col_val  array=2  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_1_sum_col_val_led_array_2.csv created!
+
+-- quantity=sum_col_val  array=2  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [34 35 36] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_2_sum_col_val_led_array_2.csv created!

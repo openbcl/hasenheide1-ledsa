@@ -1,0 +1,16 @@
+# Test-log id (run, used in all file and folder names) -> name <series>_R<n> (numbered in the order run within the series), as in the reproduction package openbcl/hasenheide1-reproduction (names: dashboard/data/meta.json, field 'name'; ids and test data: results/measurement/timeseries/runs.csv). series = fuel, pan side / mm, fuel mass / g; setup = instrument configuration of the test log; t0_local = time zero (local time).
+run,name,series,setup,date,t0_local
+Hep_160_S2_R1,Hep_160_075_R1,Hep_160_075,S2,2025-12-09,17:31:00
+Hep_160_S2_R2,Hep_160_075_R2,Hep_160_075,S2,2025-12-10,11:34:00
+Hep_160_S2_R3,Hep_160_075_R3,Hep_160_075,S2,2025-12-10,12:53:00
+Hep_160_S3_R1,Hep_160_075_R4,Hep_160_075,S3,2025-12-10,14:55:00
+Hep_160_S3_R2,Hep_160_075_R5,Hep_160_075,S3,2025-12-10,15:53:00
+Hep_160_S4_R1,Hep_160_075_R6,Hep_160_075,S4,2025-12-10,17:51:00
+Hep_160_S4_R2,Hep_160_075_R7,Hep_160_075,S4,2025-12-10,18:37:00
+Hep_160_S1_R1,Hep_160_150_R1,Hep_160_150,S1,2025-12-09,12:20:00
+Hep_160_S1_R2,Hep_160_150_R2,Hep_160_150,S1,2025-12-09,14:37:00
+Hep_160_S1_R3,Hep_160_150_R3,Hep_160_150,S1,2025-12-09,16:09:00
+Hep_220_S1_R1,Hep_220_300_R1,Hep_220_300,S1,2025-12-08,15:01:00
+Hep_220_S1_R2,Hep_220_300_R2,Hep_220_300,S1,2025-12-08,16:06:00
+Hep_220_S1_R3,Hep_220_300_R3,Hep_220_300,S1,2025-12-08,17:52:00
+Hep_220_S1_R4,Hep_220_300_R4,Hep_220_300,S1,2025-12-09,10:40:00

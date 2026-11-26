@@ -1,0 +1,303 @@
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 64 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=50, led_id=3, rel. deviation = 7.67%
+  img_id=50, led_id=14, rel. deviation = 7.54%
+  img_id=50, led_id=35, rel. deviation = 9.10%
+  img_id=50, led_id=51, rel. deviation = 8.29%
+  img_id=50, led_id=59, rel. deviation = 10.38%
+  img_id=50, led_id=103, rel. deviation = 7.77%
+  img_id=50, led_id=116, rel. deviation = 7.84%
+  img_id=50, led_id=139, rel. deviation = 8.82%
+  img_id=50, led_id=145, rel. deviation = 8.95%
+  img_id=51, led_id=4, rel. deviation = 8.71%
+  img_id=51, led_id=14, rel. deviation = 9.08%
+  img_id=51, led_id=29, rel. deviation = 7.53%
+  img_id=51, led_id=32, rel. deviation = 13.96%
+  img_id=51, led_id=63, rel. deviation = 8.95%
+  img_id=51, led_id=69, rel. deviation = 8.25%
+  img_id=51, led_id=70, rel. deviation = 7.53%
+  img_id=51, led_id=77, rel. deviation = 7.75%
+  img_id=51, led_id=78, rel. deviation = 7.88%
+  img_id=51, led_id=129, rel. deviation = 7.55%
+  img_id=52, led_id=7, rel. deviation = 8.14%
+  img_id=52, led_id=8, rel. deviation = 12.49%
+  img_id=52, led_id=15, rel. deviation = 9.60%
+  img_id=52, led_id=54, rel. deviation = 8.82%
+  img_id=52, led_id=66, rel. deviation = 10.74%
+  img_id=52, led_id=93, rel. deviation = 9.77%
+  img_id=52, led_id=138, rel. deviation = 8.10%
+  img_id=53, led_id=5, rel. deviation = 7.83%
+  img_id=53, led_id=25, rel. deviation = 8.12%
+  img_id=53, led_id=70, rel. deviation = 9.04%
+  img_id=53, led_id=97, rel. deviation = 7.79%
+  img_id=54, led_id=23, rel. deviation = 12.99%
+  img_id=54, led_id=63, rel. deviation = 9.67%
+  img_id=54, led_id=127, rel. deviation = 8.63%
+  img_id=54, led_id=143, rel. deviation = 7.71%
+  img_id=55, led_id=4, rel. deviation = 9.22%
+  img_id=55, led_id=8, rel. deviation = 8.07%
+  img_id=55, led_id=25, rel. deviation = 7.71%
+  img_id=55, led_id=27, rel. deviation = 10.88%
+  img_id=55, led_id=37, rel. deviation = 8.89%
+  img_id=55, led_id=45, rel. deviation = 7.98%
+  img_id=55, led_id=50, rel. deviation = 8.62%
+  img_id=55, led_id=115, rel. deviation = 10.19%
+  img_id=55, led_id=145, rel. deviation = 8.63%
+  img_id=56, led_id=5, rel. deviation = 8.35%
+  img_id=56, led_id=17, rel. deviation = 11.72%
+  img_id=56, led_id=37, rel. deviation = 9.02%
+  img_id=56, led_id=94, rel. deviation = 7.60%
+  img_id=56, led_id=104, rel. deviation = 8.25%
+  img_id=56, led_id=124, rel. deviation = 8.45%
+  img_id=57, led_id=10, rel. deviation = 10.50%
+  img_id=57, led_id=14, rel. deviation = 12.76%
+  img_id=57, led_id=28, rel. deviation = 9.90%
+  img_id=57, led_id=49, rel. deviation = 7.60%
+  img_id=57, led_id=95, rel. deviation = 9.40%
+  img_id=58, led_id=14, rel. deviation = 14.16%
+  img_id=58, led_id=16, rel. deviation = 8.67%
+  img_id=58, led_id=30, rel. deviation = 9.12%
+  img_id=58, led_id=51, rel. deviation = 9.08%
+  img_id=58, led_id=59, rel. deviation = 10.61%
+  img_id=58, led_id=75, rel. deviation = 9.63%
+  img_id=58, led_id=103, rel. deviation = 9.26%
+  img_id=58, led_id=110, rel. deviation = 7.51%
+  img_id=63, led_id=34, rel. deviation = 9.02%
+  img_id=63, led_id=92, rel. deviation = 8.01%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 37 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=50, led_id=300, rel. deviation = 10.79%
+  img_id=50, led_id=353, rel. deviation = 7.66%
+  img_id=50, led_id=416, rel. deviation = 7.83%
+  img_id=51, led_id=313, rel. deviation = 10.38%
+  img_id=51, led_id=318, rel. deviation = 8.69%
+  img_id=51, led_id=356, rel. deviation = 8.85%
+  img_id=52, led_id=294, rel. deviation = 8.09%
+  img_id=52, led_id=300, rel. deviation = 9.03%
+  img_id=52, led_id=304, rel. deviation = 9.79%
+  img_id=52, led_id=321, rel. deviation = 8.83%
+  img_id=52, led_id=378, rel. deviation = 7.65%
+  img_id=53, led_id=297, rel. deviation = 9.54%
+  img_id=53, led_id=298, rel. deviation = 9.95%
+  img_id=53, led_id=309, rel. deviation = 8.50%
+  img_id=53, led_id=326, rel. deviation = 8.88%
+  img_id=53, led_id=328, rel. deviation = 12.74%
+  img_id=53, led_id=333, rel. deviation = 8.56%
+  img_id=53, led_id=386, rel. deviation = 8.01%
+  img_id=54, led_id=303, rel. deviation = 9.55%
+  img_id=54, led_id=308, rel. deviation = 8.37%
+  img_id=54, led_id=313, rel. deviation = 13.65%
+  img_id=54, led_id=324, rel. deviation = 9.49%
+  img_id=54, led_id=352, rel. deviation = 7.58%
+  img_id=54, led_id=353, rel. deviation = 8.38%
+  img_id=54, led_id=413, rel. deviation = 9.04%
+  img_id=55, led_id=302, rel. deviation = 9.09%
+  img_id=55, led_id=331, rel. deviation = 7.65%
+  img_id=56, led_id=312, rel. deviation = 8.79%
+  img_id=56, led_id=313, rel. deviation = 9.84%
+  img_id=56, led_id=406, rel. deviation = 8.73%
+  img_id=57, led_id=328, rel. deviation = 10.31%
+  img_id=57, led_id=384, rel. deviation = 7.77%
+  img_id=58, led_id=295, rel. deviation = 7.81%
+  img_id=63, led_id=294, rel. deviation = 8.24%
+  img_id=63, led_id=333, rel. deviation = 7.59%
+  img_id=63, led_id=436, rel. deviation = 11.91%
+  img_id=63, led_id=437, rel. deviation = 15.51%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 2 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=63, led_id=436, rel. deviation = 20.16%
+  img_id=63, led_id=437, rel. deviation = 22.49%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 2 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=63, led_id=436, rel. deviation = 21.03%
+  img_id=63, led_id=437, rel. deviation = 24.23%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 35 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=50, led_id=35, rel. deviation = 7.95%
+  img_id=50, led_id=59, rel. deviation = 8.84%
+  img_id=51, led_id=4, rel. deviation = 8.56%
+  img_id=51, led_id=14, rel. deviation = 8.03%
+  img_id=51, led_id=32, rel. deviation = 13.09%
+  img_id=51, led_id=63, rel. deviation = 8.67%
+  img_id=52, led_id=8, rel. deviation = 11.11%
+  img_id=52, led_id=15, rel. deviation = 8.47%
+  img_id=52, led_id=54, rel. deviation = 7.58%
+  img_id=52, led_id=66, rel. deviation = 9.45%
+  img_id=52, led_id=93, rel. deviation = 8.99%
+  img_id=53, led_id=25, rel. deviation = 7.69%
+  img_id=53, led_id=70, rel. deviation = 7.82%
+  img_id=54, led_id=23, rel. deviation = 11.31%
+  img_id=54, led_id=63, rel. deviation = 8.81%
+  img_id=54, led_id=127, rel. deviation = 8.53%
+  img_id=55, led_id=4, rel. deviation = 8.06%
+  img_id=55, led_id=27, rel. deviation = 9.96%
+  img_id=55, led_id=37, rel. deviation = 8.09%
+  img_id=55, led_id=50, rel. deviation = 7.71%
+  img_id=55, led_id=115, rel. deviation = 8.79%
+  img_id=56, led_id=17, rel. deviation = 10.59%
+  img_id=56, led_id=37, rel. deviation = 7.93%
+  img_id=57, led_id=10, rel. deviation = 9.22%
+  img_id=57, led_id=14, rel. deviation = 11.09%
+  img_id=57, led_id=28, rel. deviation = 8.52%
+  img_id=57, led_id=95, rel. deviation = 7.52%
+  img_id=58, led_id=14, rel. deviation = 12.81%
+  img_id=58, led_id=16, rel. deviation = 7.71%
+  img_id=58, led_id=30, rel. deviation = 8.22%
+  img_id=58, led_id=51, rel. deviation = 7.97%
+  img_id=58, led_id=59, rel. deviation = 9.23%
+  img_id=58, led_id=75, rel. deviation = 9.18%
+  img_id=58, led_id=103, rel. deviation = 7.65%
+  img_id=63, led_id=34, rel. deviation = 7.57%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 31 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=50, led_id=300, rel. deviation = 10.71%
+  img_id=50, led_id=416, rel. deviation = 7.67%
+  img_id=51, led_id=313, rel. deviation = 9.82%
+  img_id=51, led_id=318, rel. deviation = 7.97%
+  img_id=51, led_id=356, rel. deviation = 8.87%
+  img_id=52, led_id=294, rel. deviation = 7.72%
+  img_id=52, led_id=300, rel. deviation = 8.40%
+  img_id=52, led_id=304, rel. deviation = 9.29%
+  img_id=52, led_id=321, rel. deviation = 8.07%
+  img_id=53, led_id=297, rel. deviation = 8.47%
+  img_id=53, led_id=298, rel. deviation = 8.89%
+  img_id=53, led_id=309, rel. deviation = 8.24%
+  img_id=53, led_id=326, rel. deviation = 7.96%
+  img_id=53, led_id=328, rel. deviation = 12.35%
+  img_id=53, led_id=333, rel. deviation = 8.70%
+  img_id=54, led_id=303, rel. deviation = 8.54%
+  img_id=54, led_id=308, rel. deviation = 7.83%
+  img_id=54, led_id=313, rel. deviation = 12.65%
+  img_id=54, led_id=324, rel. deviation = 8.64%
+  img_id=54, led_id=353, rel. deviation = 7.71%
+  img_id=54, led_id=413, rel. deviation = 7.97%
+  img_id=55, led_id=302, rel. deviation = 7.93%
+  img_id=55, led_id=331, rel. deviation = 7.55%
+  img_id=55, led_id=347, rel. deviation = 7.76%
+  img_id=56, led_id=312, rel. deviation = 8.71%
+  img_id=56, led_id=313, rel. deviation = 9.65%
+  img_id=56, led_id=406, rel. deviation = 7.89%
+  img_id=57, led_id=328, rel. deviation = 9.97%
+  img_id=63, led_id=333, rel. deviation = 7.75%
+  img_id=63, led_id=436, rel. deviation = 13.78%
+  img_id=63, led_id=437, rel. deviation = 17.36%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 2 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=63, led_id=436, rel. deviation = 20.35%
+  img_id=63, led_id=437, rel. deviation = 22.68%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+<LEDSA_EXPORT>\ledsa\analysis\ExtinctionCoefficients.py:357: UserWarning: In the process of normalisation 2 value(s) exceed(s) 8% tolerance of relative deviation against mean intensities! You might check the reference images.
+  img_id=63, led_id=436, rel. deviation = 21.07%
+  img_id=63, led_id=437, rel. deviation = 24.27%
+  check_intensity_normalization(ref_img_data, ref_intensities, self.reference_property)
+ledsa runs with the following arguments:
+Namespace(step_1=False, step_2=False, step_3=False, step_3_fast=False, config=None, restart=False, red=False, green=False, blue=False, rgb=False, coordinates=False, analysis=True, config_analysis=None, cc=False, cc_channels=[0, 1, 2], config_stacked=None, n_simulations=2, analysis_stacked=False, demo=False, setup=None, run=False, n_cores=None, acceptance_test=False, acceptance_test_debug=False)
+config.ini loaded
+config_analysis.ini loaded!
+Using linear solver for extinction coefficient calculation.
+Note: weighting_preference and weighting_curvature parameters are ignored when using the linear solver.
+Quantities to analyse: farbg_sum_col_val sum_col_val
+
+-- quantity=farbg_sum_col_val  array=0  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+.\analysis\channel0\all_parameters.h5 is older than the files it is built from and is rebuilt.
+config.ini loaded
+Loading fit parameters...
+560 of 560 loaded.
+.\analysis\channel0\all_parameters.h5 of an earlier run is replaced.
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_0_farbg_sum_col_val_led_array_0.csv created!
+
+-- quantity=farbg_sum_col_val  array=0  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+.\analysis\channel1\all_parameters.h5 is older than the files it is built from and is rebuilt.
+config.ini loaded
+Loading fit parameters...
+560 of 560 loaded.
+.\analysis\channel1\all_parameters.h5 of an earlier run is replaced.
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_1_farbg_sum_col_val_led_array_0.csv created!
+
+-- quantity=farbg_sum_col_val  array=0  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+.\analysis\channel2\all_parameters.h5 is older than the files it is built from and is rebuilt.
+config.ini loaded
+Loading fit parameters...
+560 of 560 loaded.
+.\analysis\channel2\all_parameters.h5 of an earlier run is replaced.
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_2_farbg_sum_col_val_led_array_0.csv created!
+
+-- quantity=farbg_sum_col_val  array=1  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_0_farbg_sum_col_val_led_array_1.csv created!
+
+-- quantity=farbg_sum_col_val  array=1  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_1_farbg_sum_col_val_led_array_1.csv created!
+
+-- quantity=farbg_sum_col_val  array=1  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_2_farbg_sum_col_val_led_array_1.csv created!
+
+-- quantity=farbg_sum_col_val  array=2  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_0_farbg_sum_col_val_led_array_2.csv created!
+
+-- quantity=farbg_sum_col_val  array=2  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_1_farbg_sum_col_val_led_array_2.csv created!
+
+-- quantity=farbg_sum_col_val  array=2  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\farbg_sum_col_val\extinction_coefficients_linear_channel_2_farbg_sum_col_val_led_array_2.csv created!
+
+-- quantity=sum_col_val  array=0  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_0_sum_col_val_led_array_0.csv created!
+
+-- quantity=sum_col_val  array=0  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_1_sum_col_val_led_array_0.csv created!
+
+-- quantity=sum_col_val  array=0  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_2_sum_col_val_led_array_0.csv created!
+
+-- quantity=sum_col_val  array=1  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_0_sum_col_val_led_array_1.csv created!
+
+-- quantity=sum_col_val  array=1  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_1_sum_col_val_led_array_1.csv created!
+
+-- quantity=sum_col_val  array=1  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_2_sum_col_val_led_array_1.csv created!
+
+-- quantity=sum_col_val  array=2  channel=0 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_0_sum_col_val_led_array_2.csv created!
+
+-- quantity=sum_col_val  array=2  channel=1 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_1_sum_col_val_led_array_2.csv created!
+
+-- quantity=sum_col_val  array=2  channel=2 --
+Calculation of extinction coefficients runs on 8 cpus!
+Images with indices [50 51 52 53 54 55 56 57 58 63] were used for calculating reference intensities.
+analysis\extinction_coefficients\linear\sum_col_val\extinction_coefficients_linear_channel_2_sum_col_val_led_array_2.csv created!

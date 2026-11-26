@@ -1,0 +1,14 @@
+ledsa runs with the following arguments:
+Namespace(step_1=False, step_2=False, step_3=False, step_3_fast=False, config=None, restart=False, red=False, green=False, blue=False, rgb=False, coordinates=True, analysis=False, config_analysis=None, cc=False, cc_channels=[0, 1, 2], config_stacked=None, n_simulations=2, analysis_stacked=False, demo=False, setup=None, run=False, n_cores=None, acceptance_test=False, acceptance_test_debug=False)
+config.ini loaded
+analysis\led_search_areas.csv successfully loaded.
+Loaded coordinates from config.ini:
+[[ 4.472 11.956  2.535  4.472 11.956  0.1  ]
+ [ 4.472 11.928  2.535  4.472 11.928  0.1  ]
+ [ 4.472 11.904  2.535  4.472 11.904  0.1  ]]
+analysis\led_array_indices_000.csv successfully loaded.
+analysis\led_array_indices_001.csv successfully loaded.
+analysis\led_array_indices_002.csv successfully loaded.
+(3, 432) (3, 1) (1, 432)
+
+Coordinates successfully saved in analysis\led_search_areas_with_coordinates.csv

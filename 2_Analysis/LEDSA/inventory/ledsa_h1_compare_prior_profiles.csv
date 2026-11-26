@@ -1,0 +1,61 @@
+run,room,source,against,t_s,mean_abs_dk,mean_k_ref
+Hep_160_S2_R2,F2,prior0130 C1 farbg,neu C1 farbg,200,0.0057,0.1247
+Hep_160_S2_R2,F2,prior0130 C1 farbg,neu C1 farbg,400,0.0116,0.1232
+Hep_160_S2_R2,F2,prior0130 C1 farbg,neu C1 farbg,600,0.0116,0.1361
+Hep_160_S2_R2,F2,prior0130 C1 farbg,neu C1 farbg,800,0.0144,0.1193
+Hep_160_S2_R2,F2,prior0130 C1 sum,neu C1 sum,200,0.0058,0.1244
+Hep_160_S2_R2,F2,prior0130 C1 sum,neu C1 sum,400,0.0116,0.1228
+Hep_160_S2_R2,F2,prior0130 C1 sum,neu C1 sum,600,0.0117,0.1357
+Hep_160_S2_R2,F2,prior0130 C1 sum,neu C1 sum,800,0.0144,0.1189
+Hep_160_S2_R2,F1,prior0130 C2 farbg,neu C2 farbg,200,0.0073,0.1667
+Hep_160_S2_R2,F1,prior0130 C2 farbg,neu C2 farbg,400,0.0102,0.1014
+Hep_160_S2_R2,F1,prior0130 C2 farbg,neu C2 farbg,600,0.0070,0.1003
+Hep_160_S2_R2,F1,prior0130 C2 farbg,neu C2 farbg,800,0.0030,0.0799
+Hep_160_S2_R2,F1,prior0130 C2 sum,neu C2 sum,200,0.0077,0.1648
+Hep_160_S2_R2,F1,prior0130 C2 sum,neu C2 sum,400,0.0107,0.1005
+Hep_160_S2_R2,F1,prior0130 C2 sum,neu C2 sum,600,0.0070,0.0996
+Hep_160_S2_R2,F1,prior0130 C2 sum,neu C2 sum,800,0.0029,0.0796
+Hep_160_S2_R2,F3,prior0130 C3 farbg,neu C3 farbg,200,0.0023,0.0130
+Hep_160_S2_R2,F3,prior0130 C3 farbg,neu C3 farbg,400,0.0051,0.0889
+Hep_160_S2_R2,F3,prior0130 C3 farbg,neu C3 farbg,600,0.0078,0.1090
+Hep_160_S2_R2,F3,prior0130 C3 farbg,neu C3 farbg,800,0.0043,0.1264
+Hep_160_S2_R2,F3,prior0130 C3 sum,neu C3 sum,200,0.0022,0.0129
+Hep_160_S2_R2,F3,prior0130 C3 sum,neu C3 sum,400,0.0052,0.0881
+Hep_160_S2_R2,F3,prior0130 C3 sum,neu C3 sum,600,0.0079,0.1082
+Hep_160_S2_R2,F3,prior0130 C3 sum,neu C3 sum,800,0.0042,0.1255
+Hep_160_S2_R3,F2,prior0130 C1 sum,neu C1 sum,200,0.0084,0.1215
+Hep_160_S2_R3,F2,prior0130 C1 sum,neu C1 sum,400,0.0116,0.1128
+Hep_160_S2_R3,F2,prior0130 C1 sum,neu C1 sum,600,0.0126,0.1255
+Hep_160_S2_R3,F2,prior0130 C1 sum,neu C1 sum,800,0.0099,0.1198
+Hep_160_S2_R3,F3,prior0130 C3 sum,neu C3 sum,200,0.0023,0.0127
+Hep_160_S2_R3,F3,prior0130 C3 sum,neu C3 sum,400,0.0130,0.0979
+Hep_160_S2_R3,F3,prior0130 C3 sum,neu C3 sum,600,0.0165,0.0950
+Hep_160_S2_R3,F3,prior0130 C3 sum,neu C3 sum,800,0.0126,0.1272
+Hep_160_S2_R2,F1,prior0100 stack sum,neu stack C2+J3 sum,200,0.0078,0.1619
+Hep_160_S2_R2,F1,prior0100 stack sum,neu stack C2+J3 sum,400,0.0089,0.0919
+Hep_160_S2_R2,F1,prior0100 stack sum,neu stack C2+J3 sum,600,0.0051,0.0839
+Hep_160_S2_R2,F1,prior0100 stack sum,neu stack C2+J3 sum,800,0.0038,0.0759
+Hep_160_S2_R2,F2,prior0100 stack sum,neu stack C1+J2 sum,200,0.0094,0.1287
+Hep_160_S2_R2,F2,prior0100 stack sum,neu stack C1+J2 sum,400,0.0137,0.1172
+Hep_160_S2_R2,F2,prior0100 stack sum,neu stack C1+J2 sum,600,0.0144,0.1294
+Hep_160_S2_R2,F2,prior0100 stack sum,neu stack C1+J2 sum,800,0.0149,0.1142
+Hep_160_S2_R2,F3,prior0100 stack sum,neu stack C3+J1 sum,200,0.0018,0.0142
+Hep_160_S2_R2,F3,prior0100 stack sum,neu stack C3+J1 sum,400,0.0076,0.0909
+Hep_160_S2_R2,F3,prior0100 stack sum,neu stack C3+J1 sum,600,0.0097,0.1103
+Hep_160_S2_R2,F3,prior0100 stack sum,neu stack C3+J1 sum,800,0.0096,0.1262
+Hep_160_S2_R3,F2,prior0100 stack sum,neu stack C1+J2 sum,200,0.0099,0.1274
+Hep_160_S2_R3,F2,prior0100 stack sum,neu stack C1+J2 sum,400,0.0126,0.1107
+Hep_160_S2_R3,F2,prior0100 stack sum,neu stack C1+J2 sum,600,0.0168,0.1254
+Hep_160_S2_R3,F2,prior0100 stack sum,neu stack C1+J2 sum,800,0.0158,0.1134
+Hep_160_S2_R3,F3,prior0100 stack sum,neu stack C3+J1 sum,200,0.0027,0.0146
+Hep_160_S2_R3,F3,prior0100 stack sum,neu stack C3+J1 sum,400,0.0114,0.0954
+Hep_160_S2_R3,F3,prior0100 stack sum,neu stack C3+J1 sum,600,0.0113,0.1028
+Hep_160_S2_R3,F3,prior0100 stack sum,neu stack C3+J1 sum,800,0.0124,0.1272
+Hep_160_S4_R1,F2,prior0100 stack sum,neu stack C2+C1 sum,200,0.0068,0.1311
+Hep_160_S4_R1,F2,prior0100 stack sum,neu stack C2+C1 sum,400,0.0133,0.1162
+Hep_160_S4_R1,F2,prior0100 stack sum,neu stack C2+C1 sum,600,0.0166,0.1197
+Hep_160_S4_R1,F2,prior0100 stack sum,neu stack C2+C1 sum,800,0.0168,0.1096
+Hep_160_S4_R2,F2,prior0100 stack sum,neu stack C2+C1 sum,200,0.0047,0.1300
+Hep_160_S4_R2,F2,prior0100 stack sum,neu stack C2+C1 sum,400,0.0112,0.1159
+Hep_160_S4_R2,F2,prior0100 stack sum,neu stack C2+C1 sum,600,0.0136,0.1273
+Hep_160_S4_R2,F2,prior0100 stack sum,neu stack C2+C1 sum,800,0.0059,0.1206

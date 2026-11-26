@@ -1,0 +1,73 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite this repository."
+title: "Hasenheide 1 – LEDSA evaluation (LEDSA 0.13.0, code, configurations, extinction-coefficient results)"
+type: software
+version: "2026.11.25"
+date-released: "2026-11-25"
+repository-code: "https://github.com/openbcl/hasenheide1-ledsa"
+authors:
+  - given-names: Manuel
+    family-names: Osburg
+    orcid: "https://orcid.org/0009-0002-8466-9897"
+    affiliation: "Brandschutz Consult Ingenieurgesellschaft mbH Leipzig (BCL), Leipzig, Germany"
+  - given-names: Anna
+    family-names: Troff
+    orcid: "https://orcid.org/0009-0001-6625-6143"
+    affiliation: "Brandschutz Consult Ingenieurgesellschaft mbH Leipzig (BCL), Leipzig, Germany"
+  - given-names: Kristian
+    family-names: Börger
+    orcid: "https://orcid.org/0000-0003-4371-5770"
+    affiliation: "Chair of Computational Civil Engineering, University of Wuppertal, Wuppertal, Germany"
+  - given-names: Lukas
+    family-names: Arnold
+    orcid: "https://orcid.org/0000-0002-5939-8995"
+    affiliation: "Institute for Advanced Simulation, Forschungszentrum Jülich, Jülich, Germany; Chair of Computational Civil Engineering, University of Wuppertal, Wuppertal, Germany"
+# Licences apply by file type: MIT for code (*.py, *.sh), CC BY 4.0 for data, configurations, documentation and
+# figures; see the file LICENSE. No `license` key here, because CFF reads several licences as alternatives (OR).
+references:
+  - type: software
+    title: "Hasenheide light-extinction study — reproduction package (code, condensed data, FDS input files)"
+    doi: "10.5281/zenodo.24054120"
+    url: "https://github.com/openbcl/hasenheide1-reproduction"
+    authors:
+      - family-names: Osburg
+        given-names: Manuel
+      - family-names: Schelhorn
+        given-names: Jonathan
+      - family-names: Troff
+        given-names: Anna
+      - family-names: Węgrzyński
+        given-names: Wojciech
+      - family-names: Belt
+        given-names: Alexander
+      - family-names: Arnold
+        given-names: Lukas
+  - type: article
+    title: "Measuring and Modelling Smoke Light Extinction in Well-Ventilated, Multi-Room Compartment Fires: Co-located Transmissometry and A-priori FDS Validation"
+    authors:
+      - family-names: Osburg
+        given-names: Manuel
+      - family-names: Schelhorn
+        given-names: Jonathan
+      - family-names: Troff
+        given-names: Anna
+      - family-names: Węgrzyński
+        given-names: Wojciech
+      - family-names: Belt
+        given-names: Alexander
+      - family-names: Arnold
+        given-names: Lukas
+    journal: "Fire Safety Journal"
+    volume: 167
+    start: 104997
+    year: 2027
+    doi: "10.1016/j.firesaf.2026.104997"
+  - type: software
+    title: "LEDSmokeAnalysis (LEDSA)"
+    version: "0.13.0"
+    url: "https://github.com/FireDynamics/LEDSmokeAnalysis"
+    authors:
+      - family-names: Börger
+        given-names: Kristian
+      - family-names: Arnold
+        given-names: Lukas

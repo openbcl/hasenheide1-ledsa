@@ -1,0 +1,46 @@
+This repository uses two licences: MIT for the code, CC BY 4.0 for everything else.
+Copyright (c) 2026 Manuel Osburg, Anna Troff, Kristian Börger, Lukas Arnold (see CITATION.cff).
+
+1. Code: MIT License
+   Applies to the source code: all *.py and *.sh files (the analysis pipeline in 2_Analysis/LEDSA/, its tools/ and
+   checks/, and env/ledsa_tree_hash.py), except those in 2_Analysis/LEDSA/fireplot/ (section 3).
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+   documentation files (the "Software"), to deal in the Software without restriction, including without limitation
+   the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and
+   to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all copies or substantial portions of
+   the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+   THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+   CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+   IN THE SOFTWARE.
+
+2. Data, configurations, documentation and figures: Creative Commons Attribution 4.0 International (CC BY 4.0)
+   Applies to everything that is not code: tables and data files (*.csv, *.csv.gz, *.tsv.gz, *.txt), LEDSA
+   configuration files (*.ini), documentation (*.md), figures and plans (*.pdf, *.png), and all other non-code files
+   (logs, marker and flag files, CITATION.cff). The measurement data in 1_Measurements/ are a copy of the processed
+   H1 test data underlying the companion article (Osburg et al., Fire Safety Journal 167 (2027) 104997,
+   https://doi.org/10.1016/j.firesaf.2026.104997; reproduction package https://doi.org/10.5281/zenodo.24054120);
+   when using them, credit that article and package.
+
+   You are free to share (copy and redistribute the material in any medium or format) and adapt (remix, transform,
+   and build upon the material for any purpose, even commercially), under the following terms:
+     - Attribution: you must give appropriate credit, provide a link to the license, and indicate if changes were
+       made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or
+       your use.
+     - No additional restrictions: you may not apply legal terms or technological measures that legally restrict
+       others from doing anything the license permits.
+   Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+   Summary: https://creativecommons.org/licenses/by/4.0/
+
+3. Third-party components keep their own licences:
+   - The package files in 2_Analysis/LEDSA/fireplot/ are taken unchanged from brandschutzconsult/fire-preprint-template
+     and are licensed under the MIT License (2_Analysis/LEDSA/fireplot/LICENSE). ORIGIN.txt in that folder was
+     written for this repository and is covered by section 2 (CC BY 4.0).
+   - LEDSA (https://github.com/FireDynamics/LEDSmokeAnalysis) is used but not included; its pyproject.toml declares
+     the MIT License.
+   - The Python dependencies listed in env/ are distributed under their respective licences.

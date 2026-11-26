@@ -1,0 +1,2 @@
+# Keep every file byte for byte as committed (no line-ending conversion): the result tables are compared by hash.
+* -text

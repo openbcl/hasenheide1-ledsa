@@ -1,0 +1,16 @@
+# Nachfuehrung je Serie (Regel 2026-11-20: Lage > 1 px im Fenster -30 s bis Lueftung + 300 s; Alias geprueft); Serien ohne Zeile: < 1 px, feste Positionen
+run,cam,nachfuehren,begruendung
+Hep_220_S1_R1,J1,ja,"Lagepruefung: Schwenk ~190 px quer, im Fenster bis 73 px"
+Hep_220_S1_R1,C2,ja,"Lagepruefung im Rauch PSR 5-10 (unbestimmt), konsistent -4 px quer; s1scan letztes Bild +2/-4 px"
+Hep_220_S1_R1,C3,ja,Phasenkorrelation versagt (PSR 4-5); LED-Spalte ab ~300 s +5 bis +10 px (ledsa_h1_probe.py)
+Hep_160_S4_R1,C1,ja,"Lagepruefung 3,9 px laengs; Stufe 0: Nachfuehrung aendert k um 2-6 %"
+Hep_160_S2_R2,C3,ja,"Lagepruefung 3,5 px laengs (Regel > 1 px)"
+Hep_160_S2_R3,C3,ja,"Lagepruefung 3,9 px laengs, s1scan letztes Bild -4 px"
+Hep_160_S1_R2,J1,nein,"2026-11-23 zurueckgenommen: 4,0 px nur in einem Survey-Bild (770 s, PSR 18, mehrdeutig), 870/970 s 0,0 px (PSR 25); Nachfuehrung rutschte ab ~860 s um einen LED-Abstand (+17 bis +21 px, Laengsanker aus: Streifen 0 ohne Ende) -> feste Positionen"
+Hep_220_S1_R3,J2,ja,"Lagepruefung 3,1 px laengs (Regel > 1 px)"
+Hep_160_S1_R2,J2,ja,"2026-11-23 genauer Lagecheck (ledsa_h1_drift_fine.py): stetig bis ~+2 px laengs und quer; alter Wert -40 px war Alias"
+Hep_160_S3_R1,C3,ja,"2026-11-23 genauer Lagecheck: stetig bis -2,5 px laengs; alter Wert -24/+20 px war Alias"
+Hep_160_S1_R1,J2,ja,"2026-11-23 genauer Lagecheck: stetig bis ~+2 px laengs und quer (alter Lagecheck 0,2 px, eingerastet)"
+Hep_160_S2_R3,J2,ja,"2026-11-23 genauer Lagecheck: stetig bis ~+2 px laengs (alter Lagecheck 0,4 px, eingerastet)"
+Hep_220_S1_R3,C3,ja,"2026-11-23 genauer Lagecheck: ab ~250 s -2 px laengs, wenige verlaessliche Bilder (alter Lagecheck 0,3 px)"
+Hep_220_S1_R1,J2,nein,"Doppelbilder bis ~+900 s; LED-Positionen aus sauberem Bild +1600 s, Eignung in Stufe 3 pruefen"

@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# LEDSA working files that are regenerated from the raw images (not part of the record):
+# per-image readout, fixed positions before tracking, per-image positions, LED-search control images,
+# LEDSA diagnostic plots, logs of the processing runs, stage-0 test folders
+2_Analysis/LEDSA/runs/**/analysis/channel*/
+2_Analysis/LEDSA/runs/**/analysis/tracked_positions.csv.gz
+2_Analysis/LEDSA/runs/**/s1scan.png
+2_Analysis/LEDSA/runs/*/*/plots/
+2_Analysis/LEDSA/runs/_logs/
+2_Analysis/LEDSA/runs/_stage0_*/
+
+# earlier evaluations used only for comparison (not part of this repository)
+2_Analysis/LEDSA/stacked_results/
+
+# per-image output of a re-run of the tracking test (tests/)
+2_Analysis/LEDSA/tests/**/analysis/channel*/
+2_Analysis/LEDSA/tests/**/analysis/tracked_positions.csv.gz

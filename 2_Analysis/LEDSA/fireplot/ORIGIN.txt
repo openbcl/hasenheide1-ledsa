@@ -1,0 +1,15 @@
+fireplot 1.0.0, copied unchanged from https://github.com/brandschutzconsult/fire-preprint-template
+(plotstyle/src/fireplot, commit 9efdcd038086489a31661f42e628ef34132391fb). MIT License, see LICENSE. The template repository may not be publicly accessible; the
+conventions are summarised below (from docs/plotstyle.md of that repository).
+
+Summary of the conventions (docs/plotstyle.md of the template) that save_pdf/lint_figure check or the figures follow:
+- text rendered by LaTeX with preamble.tex (newtx fonts, siunitx settings of the document class); all figure text
+  (axis labels, tick labels, legend) at the body size 12 pt; figures at most the text width 150 mm
+  (figsize_single), included without scaling;
+- no figure or axes titles (the caption carries that information); short panel labels set with ax.text (here the
+  column heads "t = ... s" and the row labels "F1 (n = ...)") are used as facet labels;
+- axis labels "Quantity / unit", plain units with maths for exponents, no siunitx commands, ASCII only;
+- one series scheme (SeriesScheme) for all figures: colour = group, line style/marker = subgroup (in the profile
+  figures colour = test, line style = source; the LEM/SICK markers are set outside the scheme);
+- legends next to or above the data, never over it;
+- byte-deterministic PDFs: SOURCE_DATE_EPOCH fixed at import, font-subset tags derived from the glyphs.
