@@ -1225,6 +1225,11 @@ sections differs from that through the horizontal FDS section by −1.8 to +2.4 
 obstruction cells of both sections (set to zero). Outputs: `out/la_fds_profiles.csv`, `out/la_fds_check.csv`,
 figure `out/la_fds_profiles.pdf`.
 
+*Note (2026-11-27):* this two-section estimate is kept as documented here, but the LEDSA article does not
+use it. The article recomputes the comparison from the three-dimensional extinction output of the FDS
+baselines (every 5 s), along the same rays and with the same layer matrix and solver, as for its synthetic
+twin; that analysis belongs to the article's own analysis code, not to this repository.
+
 ### 9.5 Closure with the room profiles
 
 `code/la_closure.py` compares the measured optical depth of each N1 ray with the one predicted from the room

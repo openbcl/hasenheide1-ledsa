@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 r"""FDS-Vergleich der Langachse (2026-11-27; Abschaetzung, kein voller Twin).
 
+Hinweis (2026-11-27): Das LEDSA-Paper nutzt diese Abschaetzung nicht; es rechnet den Vergleich aus der
+3D-Extinktionsausgabe der FDS-Basislaeufe entlang derselben Strahlen neu (METHODS.md Abschnitt 9.4, Hinweis).
+
 Daten: FDS-Extinktionsschnitte des Reproduktionspakets (openbcl/hasenheide1-reproduction, Umgebungsvariable
 H1_REPRO_ROOT), results/simulation/flow_field/ef_<075|150|300>_t<100|200|300|600>.npz (FDS ysmatched): zwei senkrechte y-z-Ebenen ueber die ganze Wohnungslaenge, K0 bei
 x = 0,55 m und K1 bei x = 1,25 m (z 0-2,55 m, Raster 0,05 m), dazu der waagerechte Schnitt Kxy bei z = 2,0 m; je Brand
