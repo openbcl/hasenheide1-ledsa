@@ -4,8 +4,8 @@ r"""Stufe 4 der H1-LEDSA-Auswertung (LEDSA 0.13.0): Vergleich mit dem LEM je Que
 lem   Je Lauf, Raum und LEM-Hoehe, fuer jede Quelle des Raums (main = Hauptquelle je Kanal wie die Profile, Stapel bei
       zwei Kameras, jede Einzelkamera des Raums, Nebenvariante mitC1 gekennzeichnet; gesaettigte Kanaele ausgeschlossen,
       Spalte channels = verwendete Kanaele): k an der LEM-Hoehe (Schicht mit naechster Mitte) nach ledsa_h1_profiles
-      (Maske SNR 3 je Quelle, robuste Nullung, Widmann, Sigma-Clip), je Kanal und Mittel der Kanaele. LEM wie
-      ledsa_h1_stage0.lem (Sigma-Clip). Beide danach gleich gefiltert (gleitendes +-10-s-Mittel), erst dann
+      (Maske SNR 3 je Quelle, robuste Nullung, Widmann, Hampel-Filter), je Kanal und Mittel der Kanaele. LEM wie
+      ledsa_h1_stage0.lem (Hampel-Filter). Beide danach gleich gefiltert (gleitendes +-10-s-Mittel), erst dann
       Spitze und Plateau. Spitze in (0, Lueftung), Plateau [Lueftung - 300, Lueftung - 20] s je Lauf
       (setup/ledsa_h1_runs.csv). Dazu mittlere relative Abweichung |LEDSA/LEM - 1| ueber die Zeit mit LEM >= 20 % seiner
       Spitze, vor der Lueftung - 20 s (mard). Fehlende Eingaben brechen ab.
@@ -121,7 +121,7 @@ def lem_table():
                                          channels="ch" + "".join(str(c) for c in sorted(chs))))
     d = pd.DataFrame(rows)
     with open(OUT_LEM, "w", encoding="utf-8", newline="") as fh:
-        fh.write("# ledsa_h1_stage4.py lem: LEDSA je Quelle gegen LEM an der LEM-Hoehe; beide Sigma-Clip + +-10 s; Spitze "
+        fh.write("# ledsa_h1_stage4.py lem: LEDSA je Quelle gegen LEM an der LEM-Hoehe; beide Hampel-Filter + +-10 s; Spitze "
                  "(0, Lueftung), Plateau [Lueftung-300, Lueftung-20] s; mard = mittlere |LEDSA/LEM-1| bei LEM >= 20 % "
                  "Spitze vor Lueftung-20 s; k in 1/m\n")
         d.to_csv(fh, index=False, float_format="%.4f")

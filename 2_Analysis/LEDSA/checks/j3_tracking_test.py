@@ -58,7 +58,7 @@ for tp in (200, 400, 600, 800, 1000, 1100):
                      median_rel_pct=100 * np.nanmedian(np.abs(d) / np.abs(a)), max_abs_dk=np.abs(d[jm]),
                      z_at_max=cen[jm], rel_at_max_pct=100 * np.abs(d[jm]) / np.abs(a[jm])))
 print(pd.DataFrame(rows).round(4).to_string(index=False))
-print("\nLEM comparison (as ledsa_h1_stage4.py lem: nearest layer, sigma clip, +-10 s smoothing):")
+print("\nLEM comparison (as ledsa_h1_stage4.py lem: nearest layer, Hampel filter, +-10 s smoothing):")
 for z, lv in s0.lem(RUN, ROOM).items():
     j = int(np.argmin(np.abs(cen - z)))
     ml = s0.metrics(lv, T_VENT)

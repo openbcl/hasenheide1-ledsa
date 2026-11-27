@@ -10,7 +10,8 @@ Quellen (je Raum, an den LEM-Hoehen und als Profil):
   neu    unsere Inversion derselben Kamera bzw. desselben Kamerapaars (Stapel), farbg und sum, und unsere Hauptquelle
          (main, je Kanal ohne gesaettigte Kanaele, mit Maske).
 Gleiche Nachbearbeitung fuer alle (ledsa_h1_profiles.paper_series: robuste Nullung [-5, +10] s, bei prior0130 [-30, +15] s
-(5er-Mittel), Widmann, Sigma-Clip;
+(5er-Mittel), Widmann, Sigma-Clip (Ausgaben vom 2026-11-24, vor dem Wechsel zum Hampel-Filter am
+2026-11-27; nicht neu erzeugt, die frueheren Staende liegen nicht im Repo);
 +-10 s), ohne Maske ausser main; Kennzahlen gegen LEM wie ledsa_h1_stage4 (Spitze, Plateau, mard). Profile: mittlere
 |Delta k| gegen unsere gleiche Quelle bei 200/400/600/800 s (Schichtmitten interpoliert, 0-2,5 m).
 Aufruf: hh2-venv compare_prior.py <LEDSA-Ordner> <out-Ordner>  -> compare_prior_lem.csv, compare_prior_profiles.csv

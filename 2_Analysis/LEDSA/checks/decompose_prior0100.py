@@ -6,7 +6,8 @@ ref_img_indices -> erste num_ref_images = 10 Bilder (LEDSA 0.13.0, StackedExtinc
 in 0.10.0 nicht geprueft). Je Variante wird nur der Stapel (-as, sum_col_val) mit LEDSA 0.13.0 aus unseren Auslesen neu
 invertiert, in runs/<Lauf>/zerl_<Raum>_<Variante>/ (Hauptauswertung unberuehrt); Variante all = alle drei.
   make   schreibt die config_stacked.ini der Varianten (hh2-venv)
-  eval   vergleicht an den LEM-Hoehen (wie compare_prior: robuste Nullung, Widmann, Sigma-Clip, +-10 s, ohne Maske)
+  eval   vergleicht an den LEM-Hoehen (wie compare_prior: robuste Nullung, Widmann, Sigma-Clip, +-10 s, ohne Maske; Ausgaben vor dem Wechsel
+         zum Hampel-Filter am 2026-11-27, nicht neu erzeugt)
 Aufruf: hh2-venv decompose_prior0100.py <LEDSA-Ordner> make|eval [<out-Ordner>]
 """
 import configparser

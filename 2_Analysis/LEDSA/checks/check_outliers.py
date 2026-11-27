@@ -1,6 +1,6 @@
 """Pruefung der vier auffaelligen Laeufe in den Profilen (2026-11-24). Nur lesen.
 Je Fall (Lauf, Raum): (a) k-Profile bei den auffaelligen Zeiten aus jeder verfuegbaren Inversion (Stapel, Einzelkameras),
-farbg gegen sum, gleiche Nachbearbeitung wie ledsa_h1_profiles.py (Maske, robuste Nullung, Widmann, Sigma-Clip, +-10 s;
+farbg gegen sum, gleiche Nachbearbeitung wie ledsa_h1_profiles.py (Maske, robuste Nullung, Widmann, Hampel-Filter, +-10 s;
 Mittel der drei Kanaele); (b) Rohtransmission I/I_ref je LED ueber der LED-Hoehe (je Kamera, Kanal = Array, farbg,
 Bild naechst der Zeit), Ausreisser-LEDs (I/I_ref > 1,05 oder Sprung gegen die Nachbar-LEDs > 0,15); (c) Saettigung:
 max_col_value in den Referenzbildern (Anteil LEDs nahe am Maximum der Kamera).

@@ -284,7 +284,7 @@ repository, and the chain scripts skip work whose marker exists (§7.2).
 
 `ledsa_h1_stage0.py` holds the shared post-processing functions (§5) and two comparisons. Its own
 `paper_series` is an earlier form of §5: it nulls at the gridded value at t = 0 (if that is not finite, at the mean
-of the first 10 grid values, −30…−21 s) instead of §5 step 3; Widmann correction and sigma clip are as in §5. It is
+of the first 10 grid values, −30…−21 s) instead of §5 step 3; Widmann correction and outlier filter are as in §5. It is
 used by the stage-0 tests and (through `room_series`) by `checks/check_pedestal_k.py` and `checks/check_j2.py`.
 `test1 <run> <room>` compares a new stack
 (`farbg_sum_col_val`, `sum_col_val`) with an earlier LEDSA 0.10.0 stack and the LEM. `test2 <run> <room> <folder>`
@@ -297,7 +297,7 @@ and `-as`. The full (unthinned) readout of the upper camera must already exist i
 `runs/_stage0_voll/<run>/<upper folder>`; how it was created is not documented in the repository. The outputs are `inventory/ledsa_h1_stage0_*.csv` (German column names: §6). They are records of the stage-0 tests:
 re-running `test1 Hep_160_S4_R1 F2` with the committed working folders (and the earlier stacks) gives slightly
 different values for the new stack (ratios to the LEM up to 0.006 higher, peak times up to 5 s apart; checked
-2026-11-26), so the committed table is not a reproduction target. Of the two committed
+2026-11-26, with the filter of §5 step 5 used until 2026-11-27), so the committed table is not a reproduction target. Of the two committed
 `test2` pairs, Hep_220_300_R3 F3 (stack C1 + J1, J1 thinned in `runs/`; `n_t` = 241 at the 5-s interval of the
 lower camera C1 over 0 < t < 1202 s) fits a thinning test. Hep_160_075_R6 F2 cannot be one: it is a BCL stack
 C2 + C1 with `num_skip_imgs` = 0 for both series, and `n_t` = 181 matches the unthinned 5-s interval over
@@ -456,10 +456,10 @@ effect is not estimated.
 
 | Quantity (mean of channels 0–2) | Fixed positions (main evaluation) | Tracked |
 |---|---|---|
-| Profile, median over layers of \|Δk\| at 200–1100 s | – | 0.0009–0.0028 1/m (0.9–1.2 %) |
-| Profile, largest \|Δk\| (always the bottom layer, z = 0.05 m, from 400 s) | – | up to 0.022 1/m (5–7 %) |
-| LEM at 2.3 m (layer 22, centre 2.28 m): peak / ratio to LEM | 0.6383 / 0.9462 | 0.6377 / 0.9453 |
-| LEM at 2.3 m (layer 22, centre 2.28 m): plateau / ratio to LEM | 0.2444 / 0.8577 | 0.2410 / 0.8459 |
+| Profile, median over layers of \|Δk\| at 200–1100 s | – | 0.0009–0.0029 1/m (0.8–1.2 %) |
+| Profile, largest \|Δk\| (bottom layer, z = 0.05 m, from 600 s; z = 0.15 m at 400 s) | – | up to 0.021 1/m (6–7 %) |
+| LEM at 2.3 m (layer 22, centre 2.28 m): peak / ratio to LEM | 0.6438 / 0.9402 | 0.6426 / 0.9385 |
+| LEM at 2.3 m (layer 22, centre 2.28 m): plateau / ratio to LEM | 0.2442 / 0.8575 | 0.2408 / 0.8456 |
 
 The other untracked series were not tested; Hep_160_150_R2 J3 has the most survey images > 1 px among the
 untracked J3 series of the fine survey (7; Hep_220_300_R2 J3 has the largest single value, 8.1 px). The main
@@ -715,12 +715,19 @@ array *a* is used. Steps for one layer series k(t) of one source and channel:
    Combustion Science and Technology 175(12), 2299–2308, doi:10.1080/714923279). 638 nm is the LEM wavelength (as
    stated in the companion article), so the corrected LEDSA values are comparable with the LEM. The LED wavelengths
    628 / 521 / 468 nm are as set in the code (`LAM` in `ledsa_h1_stage0.py`); their source is not in this repository.
-5. **Sigma clip:** running median m and running standard deviation s of the residual over 51 samples (centred,
-   at least 3). Values with |k − m| > 0.5·s are replaced by m. With a threshold of 0.5 s this replaces about half of
-   the values (median 52 %, 5–95 % range 42–58 % of the finite 1-s values per layer series, computed as for step 3),
-   so in effect it smooths with a running 51-s median rather than removing isolated outliers.
+5. **Outlier filter (Hampel):** running median m over 51 samples (centred, at least 3) and running median of
+   |k − m| over the same window (MAD). Values with |k − m| > 3 × 1.4826 × MAD are replaced by m; all other values
+   are kept (`outlier_filter` in `ledsa_h1_stage0.py`). It replaces 6 % of the finite 1-s values per layer series in
+   the median (5–95 % range 3–11 %, computed as for step 3), mostly by small amounts.
+   *Change of 2026-11-27:* until then this step was a "sigma clip" with threshold 0.5·s (s = running standard
+   deviation of the residual over 51 samples). It replaced about half of the values (median 52 %, 5–95 % range
+   42–58 %), i.e. it acted as a running 51-s median smoother, and damped the LEM peaks by about 3 % in the median
+   (up to 18 %). It was replaced by the Hampel filter on the author's decision for the LEDSA article, after a
+   comparison of variants (no filter, Hampel filter with ±10 s and ±5 s means). All outputs of this repository that
+   depend on the step were regenerated except the comparisons with earlier evaluations (§6.4), whose inputs are not
+   in the repository.
 
-The **LEM** series is interpolated to the same grid and sigma-clipped the same way (no nulling, no Widmann
+The **LEM** series is interpolated to the same grid and filtered the same way (no nulling, no Widmann
 correction).
 
 **Profiles** (`ledsa_h1_profiles.py csv` → `inventory/ledsa_h1_profiles.csv`): for the main source (§4.7) of every room and channel, every layer,
@@ -867,6 +874,11 @@ anchor correction, NaN = not applied, `frac_refined` = fraction of refined LEDs)
 
 ### 6.4 Comparisons with earlier evaluations (documentation only)
 
+*Note (2026-11-27):* the outputs of this section (`inventory/ledsa_h1_compare_prior_*.csv`,
+`inventory/decompose_prior0100.csv`) were computed with the filter of §5 step 5 used until 2026-11-27 (on both
+sides of each comparison). They were not regenerated after the change to the Hampel filter, because the
+earlier evaluations they read are not in the repository; their numbers below are as computed then.
+
 `checks/compare_prior.py` compares, at the LEM heights (mean of the three channels) and as profiles, against (i) the
 earlier independent LEDSA 0.13.0 evaluation (single cameras C1–C3 at the lower positions of Hep_160_075_R2, both
 quantities, and Hep_160_075_R3, `sum_col_val` only) and (ii) the earlier LEDSA 0.10.0 stacks of
@@ -901,8 +913,8 @@ are not available; not verified). Both scripts need the earlier evaluations, whi
   `farbg_sum_col_val` or `sum_col_val`; channel *a* with array *a*). For the post-processed values, see
   `inventory/ledsa_h1_profiles.csv` or `inventory/ledsa_h1_stage4_lem.csv`. To recompute them from the raw k files,
   apply all steps of §5 in order: SNR-3 mask; 1-s grid −30…1700 s; nulling by the median of the unmasked *raw*
-  values in −5…+10 s (not the value at t = 0; 30–45 s for the side variant); Widmann factor to 638 nm; sigma clip
-  (running median and standard deviation over 51 samples, threshold 0.5·s with s the running standard deviation, which acts as a running-median smoother);
+  values in −5…+10 s (not the value at t = 0; 30–45 s for the side variant); Widmann factor to 638 nm; Hampel filter
+  (running median over 51 samples; values more than 3 scaled MAD from it replaced by the median);
   then the ±10 s mean of finite values (profiles) or the running ±10 s mean and metrics (stage 4). Main source per
   channel and saturation exclusion: §4.5, §4.7.
 - **Time:** `Experiment_Time` = EXIF time − time zero (full minute, `runs.csv` `t0_local`). Ignition is at
@@ -1057,9 +1069,8 @@ the chain rewrites them (§8.9). Points to watch:
 4. **Nulling** uses the median of unmasked raw values in −5…+10 s instead of the value at t = 0 (§5 step 3). In 38
    layer series (37 of them in Hep_160_075_R3 F2) only 2 raw values are in the window, so the baseline is their mean.
 5. **Profile points vs. stage 4:** profile LEM/SICK points are nearest samples, LEDSA profile values are ±10 s means.
-   Stage 4 averages both. The sigma clip (threshold 0.5·s, s = running standard deviation) replaces about half of the values by the running 51-s
-   median, i.e. it acts as smoothing (§5 step 5). It acts on 1 Hz LEM samples and on LEDSA values interpolated from
-   4–5 s images, so it does not act identically on both.
+   Stage 4 averages both. The outlier filter (§5 step 5) acts on 1 Hz LEM samples and on LEDSA values interpolated
+   from 4–5 s images, so it does not act identically on both; it changes few values.
 6. **LEDSA `-coord` heights** are affine (no perspective) and are replaced by `ledsa_h1_ledz.py` (§3.3).
    The committed `config.ini` files (`led_array_edge_coordinates`) still hold the Jülich bottom 0.100 m; a re-run
    writes 0.1517 m (`ledsa_h1_config.set_edges` reads `setup/ledsa_h1_led_strips.csv`). Only `-coord` reads this,
@@ -1103,8 +1114,8 @@ the chain rewrites them (§8.9). Points to watch:
     against the LEM; needs the per-image readout); its output is not in the repository. The camera was kept (decided
     on 2026-11-24 after these three checks; result not verified). From the committed data, the LEM comparison in
     `inventory/ledsa_h1_stage4_lem.csv` (F2, mean of channels, peak / plateau ratio, mard) gives at 1.5 m J2 alone
-    0.977 / 0.967 / 0.099, C3 alone 0.940 / 0.833 / 0.160, stack 0.968 / 0.908 / 0.096, and at 2.3 m J2 1.052 /
-    0.872 / 0.072, C3 0.974 / 0.889 / 0.149, stack 1.027 / 0.865 / 0.071.
+    0.977 / 0.966 / 0.103, C3 alone 0.970 / 0.832 / 0.161, stack 0.963 / 0.906 / 0.101, and at 2.3 m J2 1.051 /
+    0.871 / 0.073, C3 1.001 / 0.889 / 0.150, stack 1.030 / 0.865 / 0.072.
 17. **Hep_160_150_R2 J1 array 0** has 143 instead of 144 LEDs (one not matched by `-s2`).
 18. **`2_Analysis/LEDSA/LEDSA_README.md`** is an older description (cameras at x = 0, strips 0–2.5 m) and is not
     used by this pipeline. The same holds for the handed-over templates in `photo_handover/configs/` (start values,
@@ -1191,7 +1202,7 @@ follows its chain (§4, §5) except where stated. Code comments are in German, a
   rays (variants U_B = 0.1 and 0.3 in `mask.csv.gz`). No N1 series has saturated LEDs (`setup/la_saturation.csv`).
 - **Nulling** (`code/la_post.py`): the median over the time span of the reference images instead of [−5, +10] s,
   because in Hep_220_300_R1 a person occluded part of LED 2 from −24 to +1 s (raw k ≈ 0.5 m⁻¹ on 0.6–1.1 m); the
-  rest of the post-processing is that of §5 (1-s grid, Widmann factor for green, sigma clip).
+  rest of the post-processing is that of §5 (1-s grid, Widmann factor for green, Hampel filter).
 - **Dense smoke:** in Hep_220_300, LED 2 is masked from about 130 s on and LED 4 from about 200 to 500 s.
 
 ### 9.3 Camera movement
@@ -1245,8 +1256,8 @@ F3 profiles, bracketed by the smaller and the larger of the two. LED 2 needs an 
 and R4 do not have. Results (`out/la_closure.csv`, `out/la_closure_summary.csv`, figure `out/la_closure.pdf`;
 LED-time samples with a predicted τ ≥ 0.1): where the predicted τ is at least 1, measured over predicted is 1.03 in
 the median (interquartile range 0.94–1.14) and within ±30 % in 93 % of the samples (both strips, 7 tests); for
-smaller τ, on rays near the layer interface at 200–400 s, N1 reads more than predicted (median 1.29 for LED 4,
-1.55 for LED 2). Where τ ≥ 1 the corridor bracket spans 9 % of the prediction (median).
+smaller τ, on rays near the layer interface at 200–400 s, N1 reads more than predicted (median 1.28 for LED 4,
+1.54 for LED 2). Where τ ≥ 1 the corridor bracket spans 9 % of the prediction (median).
 
 ### 9.6 Files and reproduction
 

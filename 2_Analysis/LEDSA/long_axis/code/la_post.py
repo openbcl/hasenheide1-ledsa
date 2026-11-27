@@ -4,7 +4,7 @@ r"""Nachbearbeitung der Langachsen-Inversion.
 Je (Lauf, Kamera, Array): farbg_sum_col_val, Kanal 1 (gruen); Maske U_B 0,2 (la.py mask; bei Leserauschen zusaetzlich
 SNR 3, gesperrt wenn eines greift); Schichten ohne Strahl (Weglaenge 0 in led_array_<a>_distances_per_layer.txt) NaN;
 dann wie die Raumauswertung ledsa_h1_profiles.paper_series (1-s-Raster -30...1700 s, Nullung Median [-5, +10] s,
-Widmann gruen, Sigma-Clip 0,5 sigma/51 s), ABER Nullung ueber die Zeitspanne der Referenzbilder statt [-5, +10] s
+Widmann gruen, Hampel-Filter 51 s/k = 3), ABER Nullung ueber die Zeitspanne der Referenzbilder statt [-5, +10] s
 (ref_span; Verdeckung um die Zuendung). Sperren: CAM_MOVED (ab t_cut), EXCLUDED (ganze Serie).
 Optional (nur wenn die Umgebungsvariable H1_PRIOR098_LA gesetzt ist; nicht Teil dieses Repos): Vergleich mit einer
 frueheren LEDSA-0.9.8-Auswertung derselben Serien (Ordner mit ledsa_<Lauf>_L2_array<a>_ch1.csv, sum_col_val,

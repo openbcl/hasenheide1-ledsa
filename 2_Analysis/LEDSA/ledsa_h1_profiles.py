@@ -7,7 +7,7 @@ _extract_profile, _draw_vertical_profile), ueber ledsa_h1_stage0.py (paper_serie
     ledsa_h1_config.rooms, also ohne CAM_EXCLUDE), Groesse farbg_sum_col_val, Array i im Kanal i;
   - gesperrte (t, Schicht) der Maske (ledsa_h1_mask.py, SNR 3) vor der Nachbearbeitung NaN;
   - 1-s-Raster, Nullung robust: Median der freien Rohwerte in [-5, +10] s statt Wert bei t = 0 (Abweichung vom
-    Paper, Begruendung in paper_series), Widmann-Faktor (638/lambda)^-1.0088 (628/521/468 nm), Sigma-Clip 0,5 sigma/51;
+    Paper, Begruendung in paper_series), Widmann-Faktor (638/lambda)^-1.0088 (628/521/468 nm), Hampel-Filter (51, k = 3);
   - Profilzeiten 200, 400, 600, 800 s; LEDSA je Lauf als Mittel ueber +-10 s (CSV je Kanal); LEM/SICK (SICK: Spalte
     _corr) naechster Messwert, ohne Mittelung.
   - Figur (Abweichung vom Paper, festgelegt 2026-11-24): statt Mittel +- Standardabweichung ueber die Laeufe je
@@ -73,7 +73,7 @@ def paper_series(t, k, ch, tag, win=BASE_WIN_S):
     if win == BASE_WIN_S and (not np.isfinite(v0) or abs(v0 - base) > 0.01 or w.sum() < 3):
         # n_base < 3: Median aus 2 Werten = Mittel, nicht robust gegen ein verdecktes Bild -> protokollieren
         base_log.append(dict(tag=tag, base_paper=v0, base_robust=base, n_base=int(w.sum())))
-    return s0.sigma_clip((v - base) * s0.widmann(ch))
+    return s0.outlier_filter((v - base) * s0.widmann(ch))
 
 
 def window_mean(v, tg, t):
@@ -137,7 +137,7 @@ def build_csv():
     dk, dp = pd.DataFrame(rows_k), pd.DataFrame(rows_p)
     with open(OUT_K, "w", encoding="utf-8", newline="") as fh:
         fh.write("# ledsa_h1_profiles.py: LEDSA 0.13.0 H1, Hauptinversion je Raum, farbg, Maske SNR 3, Paper-Methode "
-                 "(Nullung robust [-5, +10] s, Widmann, Sigma-Clip), Mittel +-10 s; je Kanal ohne gesaettigte Kameras; k in 1/m\n")
+                 "(Nullung robust [-5, +10] s, Widmann, Hampel-Filter), Mittel +-10 s; je Kanal ohne gesaettigte Kameras; k in 1/m\n")
         dk.to_csv(fh, index=False, float_format="%.5f")
     with open(OUT_P, "w", encoding="utf-8", newline="") as fh:
         fh.write("# ledsa_h1_profiles.py: LEM und SICK (_corr) naechster Messwert zur Profilzeit; k in 1/m\n")

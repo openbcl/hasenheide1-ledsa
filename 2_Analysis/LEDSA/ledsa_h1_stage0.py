@@ -3,10 +3,13 @@ r"""Stufe 0 der H1-LEDSA-Auswertung (METHODS.md section 4.1): Vergleiche nach Pa
 
 Nachbearbeitung wie das Paper (Skript plot_ledsa_profiles.py des nicht oeffentlichen Paper-Repositoriums, load_stacked_ledsa):
 Interpolation jeder Schichtreihe auf das 1-s-Raster t = T_START..T_END, Nullung auf den Wert bei t = 0, Widmann-Faktor
-(638 / lambda)^-1.0088 mit lambda 628 / 521 / 468 nm je Kanal, Sigma-Clip 0,5 sigma, Fenster 51, min. 3 Werte; Mittel
+(638 / lambda)^-1.0088 mit lambda 628 / 521 / 468 nm je Kanal, Ausreisserfilter (Hampel, Fenster 51, k = 3); Mittel
 ueber die drei Arrays (Array i im Kanal i). Hoehe -> Schicht mit naechster Mitte. Gesperrte Schichten (Maske SNR 3,
 Anteil > 0,5; ledsa_h1_mask.py) vor der Nachbearbeitung NaN, fuer beide Groessen gleich.
-LEM und LEDSA fuer Spitze/Plateau gleich gefiltert (Sigma-Clip wie oben, dann gleitendes +-10-s-Mittel).
+LEM und LEDSA fuer Spitze/Plateau gleich gefiltert (Hampel-Filter wie oben, dann gleitendes +-10-s-Mittel).
+Bis 2026-11-27 stand hier ein "Sigma-Clip" mit Schwelle 0,5 sigma (laufende Standardabweichung), der rund die Haelfte
+der Werte durch den laufenden Median ersetzte und damit als 51-s-Medianglaetter wirkte; ersetzt durch den Hampel-Filter
+(Entscheidung des Autors, LEDSA-Paper, METHODS.md section 5).
 Plateau = [Lueftung - 300 s, Lueftung - 20 s] je Lauf (setup/ledsa_h1_runs.csv, gemessene Lueftung).
 
   test1 <Lauf> <Raum>  neuer Stapel (farbg, sum) gegen die frueheren 0.10.0-Stapel (stacked_results/, sum_col_val) und LEM
@@ -28,7 +31,7 @@ from ledsa_h1_config import RUNS   # noqa: E402
 
 T_START, T_END = -30, 1700
 LAM = {0: 628.0, 1: 521.0, 2: 468.0}
-SIG_THRESH, SIG_WIN, SIG_MINP = 0.5, 51, 3
+HAMPEL_WIN, HAMPEL_K, HAMPEL_MINP = 51, 3.0, 3   # Fenster (Werte des 1-s-Rasters), Schwelle in skalierten MAD, min. Werte
 HALF_S = 10
 LEM_MIN_N = 100          # LEM-Spalte nur mit mindestens so vielen Werten (ganz leere Spalten, z. B. LEM_4 F1 220_R1/R4)
 OLD = Path(os.environ.get("H1_PRIOR0100", str(HERE / "stacked_results")))   # fruehere Stapel, nicht im Repo
@@ -51,14 +54,17 @@ def load_k(path):
     return d.iloc[:, 0].to_numpy(float), d.iloc[:, 1:].to_numpy(float), centers
 
 
-def sigma_clip(v):
-    s = pd.Series(v)
-    med = s.rolling(SIG_WIN, center=True, min_periods=SIG_MINP).median()
-    res = v - med.to_numpy()
-    sd = pd.Series(res).rolling(SIG_WIN, center=True, min_periods=SIG_MINP).std().to_numpy()
+def outlier_filter(v):
+    """Hampel-Filter: Werte, die vom laufenden Median (zentriert, HAMPEL_WIN Werte) um mehr als HAMPEL_K skalierte
+    mittlere absolute Abweichungen (1,4826 * laufender Median von |v - Median|) abweichen, werden durch den Median
+    ersetzt; alle anderen bleiben unveraendert. NaN bleiben NaN."""
+    v = np.asarray(v, dtype=float)
+    med = pd.Series(v).rolling(HAMPEL_WIN, center=True, min_periods=HAMPEL_MINP).median().to_numpy()
+    dev = np.abs(v - med)
+    mad = pd.Series(dev).rolling(HAMPEL_WIN, center=True, min_periods=HAMPEL_MINP).median().to_numpy()
     out = v.copy()
-    bad = np.abs(res) > SIG_THRESH * sd
-    out[bad] = med.to_numpy()[bad]
+    bad = dev > HAMPEL_K * 1.4826 * mad
+    out[bad] = med[bad]
     return out
 
 
@@ -71,7 +77,7 @@ def paper_series(t, k, ch):
     v = np.interp(tg, t, k, left=np.nan, right=np.nan)          # NaN (gesperrt) bleibt in den Nachbarintervallen NaN
     i0 = int(np.argmin(np.abs(tg)))
     base = v[i0] if np.isfinite(v[i0]) else np.nanmean(v[:10])
-    return sigma_clip((v - base) * widmann(ch))
+    return outlier_filter((v - base) * widmann(ch))
 
 
 def smooth(v):
@@ -143,7 +149,7 @@ def lem(run, room):
         if m and d[c].notna().sum() >= LEM_MIN_N:
             if float(m.group(1)) in out:
                 raise SystemExit(f"[--] {run} {room}: zwei LEM auf {m.group(1)} m")
-            out[float(m.group(1))] = sigma_clip(np.interp(grid(), d["Time (s)"].to_numpy(float), d[c].to_numpy(float),
+            out[float(m.group(1))] = outlier_filter(np.interp(grid(), d["Time (s)"].to_numpy(float), d[c].to_numpy(float),
                                                           left=np.nan, right=np.nan))
     return out
 
