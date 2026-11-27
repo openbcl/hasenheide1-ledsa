@@ -1,0 +1,4 @@
+# la.py: Kameralagen L1/L2 Woche 2 (positionen.csv); pane_distance 0 (keiner im Labbook)
+position,position_labbook,room,x_m,y_m,z_m,pane_distance_m
+L1,L2,FC,0.813,8.104,0.686,0.0
+L2,L3,F3,0.256,13.607,0.715,0.0

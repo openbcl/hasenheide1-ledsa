@@ -75,6 +75,9 @@ photo_handover/              description of the LEDSA raw images as handed over 
                              use rows snr = 3 of the matching quelle and led_array; blocked cells have
                              gesperrt = True, keyed by t_s and layer (METHODS.md section 5); C1 of Hep_160_075_R1 only
                              in runs/Hep_160_S2_R1/plots_h1/mask_F2_mitC1.csv.gz)
+    long_axis/               separate evaluation of camera N1, which looked along the building at two strips in
+                             rooms F2 and F1 (path means over several rooms; comparison with FDS and closure with
+                             the room profiles): code/, setup/, runs/, out/ (METHODS.md section 9)
     runs/Hep_160_S2_R1/stacked_F2_mitC1/   side variant with an excluded camera (not in the main evaluation)
     runs/Hep_160_S2_R*/zerl_F*_*/          decomposition variants of the comparison with earlier stacks
     runs/<run>/stage3r1_*_ok, runs/<run>/<pos>_<cam>/stage2_*_ok   marker files of the batch scripts; delete them only
@@ -130,6 +133,14 @@ committed tables byte for byte; on Linux/macOS pandas writes LF instead of CRLF 
 toolchain (Matplotlib, TeX distribution, fonts; see `env/README.md`). Without LaTeX, use
 `python ledsa_h1_profiles.py csv` (tables only). The full chain from the raw images (LED search, tracking, readout,
 inversions) is described in `METHODS.md`; it needs the images and the LEDSA environment.
+
+Long-axis camera (METHODS.md section 9), from `2_Analysis/LEDSA/long_axis/code`, with `H1_REPRO_ROOT` set to a
+checkout of the reproduction package of the companion article (for the FDS sections):
+
+```bash
+python la_post.py; python la_fig.py; python la_fds.py; python la_fds_fig.py
+python la_closure.py closure; python la_closure_fig.py
+```
 
 ## Comparing another evaluation
 

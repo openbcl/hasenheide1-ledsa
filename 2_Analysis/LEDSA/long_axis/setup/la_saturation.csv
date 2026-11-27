@@ -1,0 +1,18 @@
+# la.py: Saettigung je Array in den Referenzbildern
+run,cam,array,sat_frac_pct
+Hep_220_S1_R1,N1,0,0.0
+Hep_220_S1_R1,N1,1,0.0
+Hep_220_S1_R2,N1,0,0.0
+Hep_220_S1_R2,N1,1,0.0
+Hep_220_S1_R3,N1,0,0.0
+Hep_220_S1_R3,N1,1,0.0
+Hep_160_S2_R2,N1,0,0.0
+Hep_160_S2_R2,N1,1,0.0
+Hep_160_S2_R3,N1,0,0.0
+Hep_160_S2_R3,N1,1,0.0
+Hep_160_S3_R1,N1,0,0.0
+Hep_160_S3_R1,N1,1,0.0
+Hep_160_S3_R2,N1,0,0.0
+Hep_160_S3_R2,N1,1,0.0
+Hep_160_S2_R2,J4,0,43.33
+Hep_160_S2_R2,J4,1,0.0

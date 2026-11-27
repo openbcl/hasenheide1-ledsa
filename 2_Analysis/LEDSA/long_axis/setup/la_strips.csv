@@ -1,0 +1,4 @@
+# la.py: Streifen der langen Sichtachse; Array 0 = LED 4 (naeher), 1 = LED 2
+array,led,room,colour,channel,origin,n_leds,x_m,y_m,z_bottom_m,z_top_m
+0,LED 4,F2 (lange Sichtachse),G,1,BCL,150,0.732,4.44,0.055,2.535
+1,LED 2,F1 (lange Sichtachse),G,1,BCL,150,1.49,0.0,0.055,2.535

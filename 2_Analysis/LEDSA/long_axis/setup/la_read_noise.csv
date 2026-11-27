@@ -1,0 +1,10 @@
+# la.py: Leserauschen der Box-Summe Kanal 1 (optisches Schwarz wie ledsa_h1_noise); NaN = kein optisches Schwarz
+run,cam,channel,radius_px,n_img,sigma_sum
+Hep_220_S1_R1,N1,1,7,0,
+Hep_220_S1_R2,N1,1,7,0,
+Hep_220_S1_R3,N1,1,7,0,
+Hep_160_S2_R2,N1,1,7,0,
+Hep_160_S2_R3,N1,1,7,0,
+Hep_160_S3_R1,N1,1,7,0,
+Hep_160_S3_R2,N1,1,7,0,
+Hep_160_S2_R2,J4,1,5,10,20.36942790826091

@@ -14,6 +14,13 @@ __pycache__/
 2_Analysis/LEDSA/runs/_logs/
 2_Analysis/LEDSA/runs/_stage0_*/
 
+# long-axis camera (METHODS.md section 9): the same kinds of working files, plus chain logs and control images
+2_Analysis/LEDSA/long_axis/runs/**/analysis/channel*/
+2_Analysis/LEDSA/long_axis/runs/**/plots/
+2_Analysis/LEDSA/long_axis/runs/**/s1scan.png
+2_Analysis/LEDSA/long_axis/runs/**/ends.png
+2_Analysis/LEDSA/long_axis/runs/**/chain_log.txt
+
 # earlier evaluations used only for comparison (not part of this repository)
 2_Analysis/LEDSA/stacked_results/
 

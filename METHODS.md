@@ -10,7 +10,7 @@ repository root unless they start with `runs/`, `setup/`, `inventory/`, `plots/`
 terms needed to read them are explained where they occur.
 
 Contents: 1 Scope · 2 Software · 3 Inputs · 4 Processing chain · 5 Post-processing · 6 Result files ·
-7 Reproduction · 8 Known deviations and limitations
+7 Reproduction · 8 Known deviations and limitations · 9 Long-axis camera (N1)
 
 ---
 
@@ -82,7 +82,8 @@ Strip x/y and end heights: §3.3. Wavelengths used for the Widmann correction: 6
 - The other tests of the campaign (ethanol tests, most with artificial glycol or white-oil fog; isopropanol; PUR): `ledsa_h1_setup.py` keeps only runs whose
   name starts with `Hep_`.
 - The positions with a long line of sight along the building (L1, L2) and the cameras used only there:
-  `ledsa_h1_setup.py` keeps only positions starting with `F`.
+  `ledsa_h1_setup.py` keeps only positions starting with `F`. Camera N1 at L2 is evaluated separately in
+  `2_Analysis/LEDSA/long_axis/` (§9).
 - The raw images, the per-image LEDSA readout `runs/*/*/analysis/channel*/` (this folder also holds LEDSA's binary
   intermediate data `all_parameters.h5`, so `.gitignore` covers it through the `channel*/` entry), the per-image
   tracked positions, the LED-search control images, LEDSA's diagnostic plots `runs/*/*/plots/` and the chain logs in
@@ -1142,3 +1143,132 @@ the chain rewrites them (§8.9). Points to watch:
     t = 0, up to +20.0 s in the main evaluation (+40.5 s in the side variant). Hep_160_075_R4 F3 is the opposite
     case: a low LEM reading from 3 s ends the window at −17 s (C3 reference images −66.1…−21.0 s). The effect of smoke
     in the reference images on k is not quantified.
+
+---
+
+## 9. Long-axis camera (N1)
+
+A separate evaluation of the camera that looked along the building, in `2_Analysis/LEDSA/long_axis/` (paths in
+this section are relative to that folder). It uses the modules of the room evaluation without changing them and
+follows its chain (§4, §5) except where stated. Code comments are in German, as in the rest of the pipeline.
+
+### 9.1 Camera, strips and tests
+
+- **Camera N1** (Nikon D610, 60 mm lens, no optical black) at position L2 in room F3, x = 0.256 m, y = 13.607 m,
+  z = 0.715 m (`setup/la_positions.csv`, from `photo_handover/positionen.csv`). Seven tests: Hep_220_300_R1–R3
+  (`Hep_220_S1_R1`–`R3`), Hep_160_075_R2, R3 (`Hep_160_S2_R2`, `R3`) and Hep_160_075_R4, R5 (`Hep_160_S3_R1`,
+  `R2`); the run ids in the files are those of `runs.csv`.
+- **Strips:** LED 4 on the window wall of room F2 (x = 0.732 m, y = 4.44 m; LEDSA array 0, the nearer strip) and
+  LED 2 on the window wall of the fire room F1 (x = 1.49 m, y = 0; array 1), both green BCL strips with 150 LEDs
+  from z = 0.055 to 2.535 m (`setup/la_strips.csv`); only channel 1 (green) is evaluated. In the image the two
+  strips are told apart by their LED pitch in pixels.
+- **Path:** the rays run 9.2 m (LED 4) and 13.7 m (LED 2) through F3, the corridor FC and F2 (LED 2 also F1). The
+  retrieved k(z) is therefore a path-length-weighted mean over several rooms, not a room value.
+- **Camera J4** (Canon EOS 80D) at position L1 in the corridor was used in Hep_160_075_R2 only. It is **excluded**
+  (`code/la_post.py`, `EXCLUDED`): the row at which both complete strips show the same height gives a camera
+  height of about 0.23 m against 0.686 m in the position table, which could not be resolved, and the image used
+  for the LED search (−31 s) had an object in the line of sight, so only 59 of the 150 LEDs of LED 2 were found.
+  Its rows remain in the setup tables; its working folder is not in the repository.
+
+### 9.2 Deviations from the room evaluation
+
+- **LED search** (`code/la.py scan`): reference image = the latest image before −30 s with both chains complete
+  in the same camera pose (persons were in the image shortly before ignition in some tests); search radius 7 px,
+  set by the pitch of the farther strip. The search windows of all series were checked on the control images
+  (`setup/la_windows.csv`, status `geprueft`; the control images are not in the repository).
+- **Partly visible strips** (`code/la.py edges`, `ledz`): LED indices follow from the local pitch, with gaps
+  (> 1.5 pitches) and double detections (< 0.6 pitch, which get the index of the previous LED and are not
+  counted). The LEDs not found at the strip ends are, for N1, the top 3 of LED 4 and the bottom 9 of LED 2
+  (`END_HIDDEN`). A horizon test supports this: points at the camera height lie on one image row in both strips;
+  with these assignments the inferred number of hidden LEDs at the bottom of LED 2 is 8.6–9.7 in the tests where
+  the bottom end is visible, against 13–14 for the alternative. In Hep_160_075_R2, R3 and R5 the middle of LED 2 is
+  hidden; only the top segment (55–65 LEDs, z ≥ 1.47–1.60 m) is used, and the short segments below it are not.
+- **Reference images** (`code/la.py analysis`): the window ends 20 s before the first LEM reaction in any of the
+  rooms F1–F3 (the rays cross all of them), at most at +20 s; selection as in §4.4, for channel 1 and arrays 0/1.
+- **Mask** (`code/la.py mask`): N1 has no optical black, so the SNR criterion of §4.4 is not available. A ray is
+  invalid if `farbg` ≤ 0 or if U_B (P/S + P0/S0) > 0.1 at an optical depth above 0.1, with U_B = 0.2 (P pedestal,
+  S signal, index 0 = reference); a layer is masked at a time if more than half of its path length lies on invalid
+  rays (variants U_B = 0.1 and 0.3 in `mask.csv.gz`). No N1 series has saturated LEDs (`setup/la_saturation.csv`).
+- **Nulling** (`code/la_post.py`): the median over the time span of the reference images instead of [−5, +10] s,
+  because in Hep_220_300_R1 a person occluded part of LED 2 from −24 to +1 s (raw k ≈ 0.5 m⁻¹ on 0.6–1.1 m); the
+  rest of the post-processing is that of §5 (1-s grid, Widmann factor for green, sigma clip).
+- **Dense smoke:** in Hep_220_300, LED 2 is masked from about 130 s on and LED 4 from about 200 to 500 s.
+
+### 9.3 Camera movement
+
+`code/la_drift_led.py` measures the shift of every image against the LED-search reference image from the LED
+centroids (green plane at half resolution, window ±2 half-pixels, three iterations, median over the LEDs with at
+least 20 % of the reference signal). On synthetically shifted copies of the reference image it recovers shifts to
+0.02 px. The phase correlation of §4.3 was not used: on these strip images its single values scatter by ±1–2 px.
+Results (`out/la_drift_led_summary.csv`, window −30 s to ventilation + 300 s): Hep_160_075 a slow drift along the
+strips of up to 1.6–2.4 px, across at most 0.7 px; Hep_220_300_R1 and R3 at most 1.4 and 1.8 px (measurable only
+until about 245 s and from about 1320 s, the LED signal in between being 0.1–0.5 % of the reference);
+Hep_220_300_R2 shifted across by about −5.5 px (single values −3.7 to −6.5 px) between 320 s (still about 0) and
+1280 s. `code/la_drift_sens.py` estimates the effect from the light lost from the search square in the reference
+image (`out/la_drift_sens.csv`): 1 px costs at most 1.3 %, 3 px at most 6 % (along LED 2, whose pitch of 12 px is
+smaller than the 15-px square, a shift along the strip can also add light from the neighbouring LED), i.e. at most
+about 0.007 m⁻¹ over these path lengths; 5–6 px across cost 13–23 %. **Hep_220_300_R2 is therefore excluded after
+320 s** (`code/la_post.py`, `CAM_MOVED`).
+
+### 9.4 Comparison with FDS
+
+`code/la_fds.py` uses the FDS extinction sections of the reproduction package of the companion article
+(`results/simulation/flow_field/ef_<fire>_t<time>.npz`; environment variable `H1_REPRO_ROOT`): two vertical
+sections along the whole apartment at x = 0.55 m and x = 1.25 m, z = 0–2.55 m, at t = 100, 200, 300 and 600 s,
+for the fires Hep_160_075 and Hep_220_300. For every LED the optical depth along the straight ray from the camera
+is integrated through the field, interpolated linearly in x between the two sections (outside them the nearer
+one), and inverted with the same layer matrix (`led_array_<a>_distances_per_layer.txt`; recomputed from the
+geometry, it agrees to 10⁻¹⁵ m) and the same solver as LEDSA (NNLS with second-difference penalty, λ = 0.5). The
+horizontal distribution across the building is not resolved; at z = 2.0 m, the ray integral through the two
+sections differs from that through the horizontal FDS section by −1.8 to +2.4 % from 200 s on (up to +23 % at
+100 s for LED 4, where there is hardly any smoke on the rays), and 1.8 % of the LED-2 ray length lies in
+obstruction cells of both sections (set to zero). Outputs: `out/la_fds_profiles.csv`, `out/la_fds_check.csv`,
+figure `out/la_fds_profiles.pdf`.
+
+### 9.5 Closure with the room profiles
+
+`code/la_closure.py` compares the measured optical depth of each N1 ray with the one predicted from the room
+profiles of the same test (`inventory/ledsa_h1_profiles.csv`, main source, channel 1 or else the mean of the
+available channels, ±10 s means at 200, 400, 600 and 800 s), integrated along the ray with each room taken as
+horizontally uniform. Stage `reduce` needs the per-image readout (not in the repository): τ = −ln(farbg/farbg_ref)
+per LED and image (reference = mean over the reference images, as in LEDSA), rays invalid by the U_B criterion
+left out, median over ±10 s if at least half of the images are valid, times the Widmann factor for green
+(`out/la_tau_led.csv.gz`). Stage `closure` uses only repository data. Room boundaries along the building are the
+wall centres of the FDS geometry (obstruction mask of the horizontal section): F1|F2 at y = 4.31 m, F2|FC at
+7.76 m, FC|F3 at 11.14 m. The corridor FC (3.4 m of each ray) has no camera; it is taken as the mean of the F2 and
+F3 profiles, bracketed by the smaller and the larger of the two. LED 2 needs an F1 profile, which Hep_160_075_R3
+and R4 do not have. Results (`out/la_closure.csv`, `out/la_closure_summary.csv`, figure `out/la_closure.pdf`;
+LED-time samples with a predicted τ ≥ 0.1): where the predicted τ is at least 1, measured over predicted is 1.03 in
+the median (interquartile range 0.94–1.14) and within ±30 % in 93 % of the samples (both strips, 7 tests); for
+smaller τ, on rays near the layer interface at 200–400 s, N1 reads more than predicted (median 1.29 for LED 4,
+1.55 for LED 2). Where τ ≥ 1 the corridor bracket spans 9 % of the prediction (median).
+
+### 9.6 Files and reproduction
+
+```
+long_axis/
+    code/la.py               setup, LED search (scan/approve), config, edges (horizon test), ledz, analysis
+                             (reference images), noise, mask
+    code/la_chain.sh         chain per camera (LEDSA -s1 ... -a, as tools/run_cam.sh plus inversion and mask)
+    code/la_crops.py         control image of the strip ends
+    code/la_post.py          post-processing -> out/la_k_1s.csv.gz, out/la_profiles.csv
+    code/la_fig.py           out/la_profiles.pdf, out/la_timeseries.pdf
+    code/la_fds.py, la_fds_fig.py          comparison with FDS (§9.4)
+    code/la_closure.py, la_closure_fig.py  closure with the room profiles (§9.5)
+    code/la_drift_led.py, la_drift_sens.py camera movement (§9.3)
+    setup/                   series, positions, strips, search windows, strip ends, read noise, saturation
+    runs/<run>/L2_N1/        LEDSA working folders (as runs/ of the room evaluation, §6.3; plus mask.csv.gz)
+    out/                     results and figures
+```
+
+From the committed data (hh2 environment, `H1_REPRO_ROOT` set for `la_fds.py`): `la_post.py`, `la_fig.py`,
+`la_fds.py`, `la_fds_fig.py`, `la_closure.py closure`, `la_closure_fig.py`. They reproduce the committed outputs.
+Raw images (`H1_IMAGES_ROOT`) are needed for the LEDSA chain, `la_drift_led.py`, `la_drift_sens.py` and
+`la_crops.py`; the per-image readout for `la_closure.py reduce`. The setup tables are the ones the runs used.
+
+### 9.7 Limitations
+
+- Path means over several rooms; the corridor is not measured, so the closure brackets it (§9.5).
+- Hep_220_300: large parts of the profiles are masked in dense smoke (§9.2); Hep_220_300_R2 ends at 320 s (§9.3).
+- The FDS comparison rests on two vertical sections and four output times (§9.4).
+- One camera position; J4 is excluded (§9.1).
